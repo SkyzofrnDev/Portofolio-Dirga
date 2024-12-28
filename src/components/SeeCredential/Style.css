@@ -1,0 +1,26 @@
+.see-credential {
+    position: relative;
+    padding: 10px;
+    background-color: rgba(42, 81, 215, 0.5);
+    border-radius: 1rem;
+    width: 45px;
+    overflow: hidden;
+    transition: width 0.5s ease;
+  }
+  
+  .see-credential:hover {
+    width: 200px; 
+}
+  .text {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.5s ease 0.5s; 
+  }
+  
+  .see-credential:hover .text {
+    opacity: 1;
+  }

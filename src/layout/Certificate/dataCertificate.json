@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "type": "large-left",
+    "image": "/path/to/certificate1.jpg",
+    "link": "https://credential-link-1.com",
+    "className": "h-96 w-1/4"
+  },
+  {
+    "id": 2,
+    "type": "small-top",
+    "image": "/path/to/certificate2.jpg",
+    "link": "https://credential-link-2.com",
+    "className": "h-48 w-full"
+  },
+  {
+    "id": 3,
+    "type": "small-bottom",
+    "image": "/path/to/certificate3.jpg",
+    "link": "https://credential-link-3.com",
+    "className": "h-44 w-full"
+  },
+  {
+    "id": 4,
+    "type": "large-right",
+    "image": "/path/to/certificate4.jpg",
+    "link": "https://credential-link-4.com",
+    "className": "h-96 w-1/2"
+  }
+]

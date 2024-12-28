@@ -1,0 +1,14 @@
+.ronded {
+  border-radius: 90px 90px 0px 0px;
+}
+.Desc {
+  width: 2500px;
+  color: #fff;
+  text-align: justify;
+  font-family: "Tw Cen MT";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 35px; 
+  text-transform: capitalize;
+}

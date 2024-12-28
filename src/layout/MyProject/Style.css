@@ -1,0 +1,153 @@
+.HeadProject:hover .Judul{
+    font-weight: bold;
+    color: white;
+    transition: ease-in-out 0.2s ;
+}
+.HeadProject:hover .dirga{
+    color: white;
+    transition: ease-in-out 0.2s ;
+}
+.BGPutih {
+    position: relative;
+    overflow: hidden;
+    background-color: #686868;
+  }
+  
+  .BGPutih::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transform: translateX(-50%);
+    transition: none;
+  }
+  
+  .animate-enter::before {
+    animation: enterAnimation 0.5s forwards;
+  }
+  
+  .animate-exit::before {
+    animation: exitAnimation 0.5s forwards;
+  }
+  
+  @keyframes enterAnimation {
+    0% {
+      width: 0;
+      left: 50%;
+    }
+    100% {
+      width: 200%;
+      left: 0;
+    }
+  }
+  
+  @keyframes exitAnimation {
+    0% {
+      width: 200%;
+      left: 0;
+    }
+    100% {
+      width: 0;
+      left: 50%;
+    }
+  }
+  
+  @keyframes spinAndShrink {
+    0% {
+      transform: rotate(0deg) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(360deg) scale(0);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes growAndSpin {
+    0% {
+      transform: rotate(360deg) scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(0deg) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Initial state - Star visible */
+  .star {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* When hovering, star spins and shrinks */
+  .HeadProject:hover .star {
+    animation: spinAndShrink 0.5s forwards;
+  }
+  
+  /* Arrow initially hidden */
+  .arrow {
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  /* When hovering, arrow grows */
+  .HeadProject:hover .arrow {
+    animation: growAndSpin 0.5s forwards;
+  }
+
+  .containe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+  }
+
+  .star, .arrow {
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+
+  .star {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .arrow {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .HeadProject:hover .star {
+    transform: rotate(360deg) scale(0);
+    opacity: 0;
+  }
+
+  .HeadProject:hover .arrow {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .HeadProject.mouse-leave .arrow {
+    animation: spinAndShrink 0.5s forwards;
+  }
+
+  .HeadProject.mouse-leave .star {
+    animation: growAndSpin 0.5s forwards;
+  }
+
+  .Judul, .dirga {
+    transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+  }
+
+  .HeadProject:hover .Judul {
+    font-weight: bold;
+    color: white;
+  }
+
+  .HeadProject:hover .dirga {
+    color: white;
+  }

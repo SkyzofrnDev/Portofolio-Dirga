@@ -1,0 +1,8 @@
+export {default as Herosection} from "./Herosection/Herosection"
+export {default as About} from "./About/About"
+export {default as JobTitle } from "./JobTitle/JobTitle"
+export {default as Certificate } from "./Certificate/Certificate"
+export {default as MyProject } from "./MyProject/MyProject"
+export {default as Journey } from "./Journey/Journey"
+export {default as MySkill } from "./MySkill/MySkill"
+export {default as Qoute } from "./Qoute/Qoute"
