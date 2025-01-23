@@ -1,0 +1,25 @@
+.rotate-container {
+    position: relative;
+    animation: moveAround 5s ease-in-out forwards;
+  }
+  
+  @keyframes moveAround {
+    0% {
+      transform: translate(0, 0);
+    }
+    20% {
+      transform: translate(20px, -20px);
+    }
+    40% {
+      transform: translate(-20px, 20px);
+    }
+    60% {
+      transform: translate(-20px, -20px);
+    }
+    80% {
+      transform: translate(20px, 20px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+}

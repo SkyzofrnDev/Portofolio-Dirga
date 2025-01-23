@@ -1,0 +1,22 @@
+[
+    {
+      "category": "FrontEnd WebDev",
+      "skill": "REACT",
+      "icon": "/bintang.svg"
+    },
+    {
+      "category": "UI/UX Design",
+      "skill": "FIGMA",
+      "icon": "/bintang.svg"
+    },
+    {
+      "category": "BackEnd WebDev",
+      "skill": "NODE JS",
+      "icon": "/bintang.svg"
+    },
+    {
+      "category": "AppDev",
+      "skill": "Flutter",
+      "icon": "/bintang.svg"
+    }
+  ]

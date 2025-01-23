@@ -1,0 +1,17 @@
+.cursor-container {
+    position: relative;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .cursor-drag {
+    animation: dragEffect 0.3s ease-out forwards;
+  }
+  
+  @keyframes dragEffect {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100px);
+    }
+  }

@@ -1,0 +1,55 @@
+.card {
+  width: fit-content;
+}
+
+.card-container {
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+  border-radius: 1.5rem;
+}
+
+.display {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.card-container:hover .display {
+  animation: slideUp 0.3s ease forwards;
+}
+
+.card-container:not(:hover) .display {
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.icon-svg {
+  fill: #ffffff; /* atau warna yang diinginkan */
+  filter: brightness(0) invert(1);
+}

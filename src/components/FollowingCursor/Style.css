@@ -1,0 +1,25 @@
+.cursor-follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 10000;
+    pointer-events: none;
+  }
+
+  .cursor-follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgba(144, 70, 254, 0.6);
+    opacity: 0;
+    z-index: 10000;
+    user-select: none;
+    pointer-events: none;
+  }
+  .hidden {
+    opacity: 0;
+  }
