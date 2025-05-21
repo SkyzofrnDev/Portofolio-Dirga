@@ -4,12 +4,12 @@ const SosialMedia = [
   {
     icon: "/SosialMedia/Tiktok.svg",
     alt: "Tiktok",
-    link: "https://www.tiktok.com",
+    link: "https://www.tiktok.com/@agusasugus",
   },
   {
     icon: "/SosialMedia/Instagram.svg",
     alt: "Instagram",
-    link: "https://www.instagram.com",
+    link: "https://www.instagram.com/4dirga.h",
   },
   {
     icon: "/SosialMedia/X.svg",
@@ -19,12 +19,12 @@ const SosialMedia = [
   {
     icon: "/SosialMedia/Github.svg",
     alt: "Github",
-    link: "https://www.github.com",
+    link: "https://github.com/SkyzofrnDev",
   },
   {
     icon: "/SosialMedia/Linkedin.svg",
     alt: "Linkedin",
-    link: "https://www.linkedin.com",
+    link: "https://www.linkedin.com/in/dirga-hardeka-agustiantara-7421832b8/",
   },
 ];
 
