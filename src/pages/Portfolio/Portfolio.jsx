@@ -12,11 +12,9 @@ import {
 } from "../../layout";
 
 const Portfolio = () => {
-  
   return (
     <>
-
-    <FollowingCursor/>
+      <FollowingCursor />
       <div className="">
         <div className="bg-[url('/Background.png')] bg-cover">
           <div className="">
@@ -29,8 +27,11 @@ const Portfolio = () => {
         <Certificate />
         <MyProject />
         <Journey />
-        <MySkill/>
-        <Qoute />
+        <MySkill />
+        <Qoute>
+          Unlock your true potential. Believe, take action, and achieve
+          greatness, because you are unstoppable.
+        </Qoute>
         <Footer />
         <Copyright />
       </div>
