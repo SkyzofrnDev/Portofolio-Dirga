@@ -10,7 +10,6 @@ import {
   MySkill,
   Qoute,
 } from "../../layout";
-import Test from "../Test/Test";
 
 const Portfolio = () => {
   
