@@ -102,7 +102,7 @@ const TextQoute = ({
         scaleX: 1,
         transformOrigin: "left center",
         ease: ease,
-        duration: 1.5,
+        duration: 5.5,
         scrollTrigger: {
           trigger: lineEl,
           scroller,
