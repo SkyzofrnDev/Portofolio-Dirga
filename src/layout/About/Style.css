@@ -12,3 +12,9 @@
   line-height: 35px; 
   text-transform: capitalize;
 }
+
+/* Optional: Tambahkan jika ingin span lebih halus saat animasi */
+p span {
+  transition: color 0.3s ease;
+}
+
