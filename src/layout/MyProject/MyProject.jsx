@@ -13,7 +13,7 @@ const MyProject = () => {
         <p className="font-bold text-5xl text-white/70">
           <ShinyTextComponent text="MY PROJECT" disabled={false} speed={3}/>
         </p>
-        <p className="w-2/3 text-2xl mt-10 xl:mt-0">
+        <p className="w-2/3 lg:text-xl xl:text-2xl mt-10 xl:mt-0">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita id
           repudiandae quibusdam, totam earum harum? temporibus!
         </p>

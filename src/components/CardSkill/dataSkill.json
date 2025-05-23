@@ -1,6 +1,6 @@
 [
     {
-      "category": "FrontEnd WebDev",
+      "category": "FrontEnd Web",
       "skill": "REACT",
       "icon": "/bintang.svg"
     },
@@ -10,7 +10,7 @@
       "icon": "/bintang.svg"
     },
     {
-      "category": "BackEnd WebDev",
+      "category": "BackEnd Web",
       "skill": "NODE JS",
       "icon": "/bintang.svg"
     },

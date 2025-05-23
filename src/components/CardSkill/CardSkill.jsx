@@ -6,7 +6,7 @@ const CardSkill = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="mt-20 pb-20 flex flex-wrap gap-10 justify-between">
+    <div className="flex mt-20 pb-20 flex-wrap gap-10 items-center justify-evenly sm:justify-between ">
       {dataSkill.map((skill, index) => (
         <div 
           key={index}
@@ -17,30 +17,29 @@ const CardSkill = () => {
           <div className="card-container">
             <img
               src=""
-              className="w-[230px] h-[290px] rounded-3xl bg-gray-500 block"
+              className="w-[150px] h-[200px] md:w-[230px] md:h-[290px] rounded-3xl bg-gray-500 block"
               style={{ outline: 'none', border: 'none' }}
               alt=""
             />
-            <div className="absolute top-0 left-0 ml-3 mt-3 bg-[#0b0b0d] rounded-full px-5 py-1">
-              <p className="twcen text-xl tracking-wide">{skill.category}</p>
+            <div className="absolute top-0 left-0 ml-3 mt-3 bg-[#0b0b0d] rounded-full px-1.5 md:px-5 py-1">
+              <p className="twcen md:text-xl tracking-wide">{skill.category}</p>
             </div>
             <div 
-              className="display bg-[#0b0b0d] rounded-b-3xl p-5"
+              className="display bg-[#0b0b0d] rounded-b-3xl p-2 md:p-5"
               style={{
                 transform: hoveredIndex === index ? 'translateY(0)' : 'translateY(100%)',
                 opacity: hoveredIndex === index ? 1 : 0,
                 transition: 'all 0.3s ease-in-out'
               }}
             >
-              <div className="flex items-center gap-5 uppercase">
+              <div className="flex items-center gap-3 md:gap-5 uppercase">
                 <img 
-                  className="icon-svg" 
+                  className="icon-svg w-5 ml-3  md:ml-0 md:w-10" 
                   src={skill.icon} 
                   alt="" 
-                  width={32} 
-                  height={32} 
+ 
                 />
-                <p className="twcen text-3xl tracking-wider">{skill.skill}</p>
+                <p className="twcen md:text-3xl tracking-wider">{skill.skill}</p>
               </div>
             </div>
           </div>

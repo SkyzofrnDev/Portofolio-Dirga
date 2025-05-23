@@ -22,10 +22,10 @@ const ShinyText = ({disabled, className, animationDuration, text}) => {
 const MySkill = () => {
   return (
     <div className="bg-[#0b0b0d] text-white px-20">
-      <div className="flex justify-between items-end  ">
+      <div className=" lg:flex justify-between items-end ">
         <div className="uppercase">
           <p className="font-semibold text-3xl">MY SKILL</p>
-          <p className="font-bold text-6xl mt-10">
+          <p className="font-bold text-5xl xl:text-6xl mt-10">
             My{" "}
             <span className="text-[#1299F5]">
               <ShinyText text="Expertise" disabled={false} speed={3} />
@@ -34,7 +34,7 @@ const MySkill = () => {
           </p>
         </div>
         <div className="">
-          <p className="text-xl">
+          <p className="text-xl mt-10 lg:mt-0 ">
             Explore the skills that define my professional{" "}
             <p>journey and drive my accomplishments.</p>
           </p>
