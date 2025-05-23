@@ -1,4 +1,4 @@
-import {useState,useEffect} from "react";
+import { useState, useEffect } from "react";
 import { ButtonCattegory, SeeCredential } from "../../components";
 import "./Style.css";
 import certificateData from "./dataCertificate.json";
@@ -15,59 +15,80 @@ const Certificate = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   const renderCertificate = (cert) => {
-    switch (cert.type) {
-      case "large-left":
-        return (
-          <a href={cert.link} key={cert.id} className={cert.className}>
-            <div className="absolute mt-80 ml-5">
-              <SeeCredential />
-            </div>
-            <img
-              className="w-full h-full bg-black rounded-[1rem] rounded-tr-[5rem]"
-              src={cert.image}
-              alt={`Certificate ${cert.id}`}
-            />
-          </a>
-        );
+    if (!cert) return null;
 
-      case "large-right":
-        return (
-          <a href={cert.link} key={cert.id} className={cert.className}>
-            <div className="absolute right-28 mt-80 ml-5">
-              <SeeCredential />
-            </div>
-            <img
-              className="h-96 w-full bg-yellow-50 rounded-[1rem] rounded-tr-[5rem] rounded-bl-[5rem]"
-              src={cert.image}
-              alt={`Certificate ${cert.id}`}
-            />
-          </a>
-        );
+    const isRight = cert.type === "large-right";
+    const imageClass =
+      cert.type === "large-left"
+        ? "rounded-[1rem] rounded-tr-[5rem]"
+        : "rounded-[1rem] rounded-tr-[5rem] rounded-bl-[5rem]";
 
-      default:
-        return null;
-    }
+    return (
+      <a
+        href={cert.link}
+        key={cert.id}
+        className={`${cert.className} relative group overflow-hidden`}
+      >
+        {/* Hover Overlay */}
+        <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
+
+        {/* Title Centered */}
+        <div className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <h3 className="text-white text-3xl leading-relaxed font-semibold text-center px-4">
+            {cert.title}
+          </h3>
+        </div>
+
+        {/* See Credential Button */}
+        <div className={`absolute ${isRight ? "right-28" : "ml-5"} mt-80 z-30`}>
+          <SeeCredential />
+        </div>
+
+        {/* Image */}
+        <img
+          className={`w-full h-full bg-black ${imageClass}`}
+          src={cert.image}
+          alt={`Certificate ${cert.id}`}
+        />
+      </a>
+    );
   };
 
   const renderSmallCertificates = () => {
-    const smallCerts = certificateData.filter(cert => 
-      cert.type === "small-top" || cert.type === "small-bottom"
+    const smallCerts = certificateData.filter(
+      (cert) => cert.type === "small-top" || cert.type === "small-bottom"
     );
 
     return (
       <div className="flex flex-col w-1/4 gap-y-5">
-        {smallCerts.map(cert => (
-          <a href={cert.link} key={cert.id} className={`${cert.className} h-full`}>
-            <div className={` mt-32
-               absolute ml-2 ` }>
+        {smallCerts.map((cert) => (
+          <a
+            href={cert.link}
+            key={cert.id}
+            className={`${cert.className} h-full relative group overflow-hidden`}
+          >
+            {/* Hover Overlay */}
+            <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
+
+            {/* Title Centered */}
+            <div className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h3 className="text-white text-3xl leading-relaxed font-semibold text-center px-4">
+                {cert.title}
+              </h3>
+            </div>
+
+            {/* See Credential */}
+            <div className="absolute mt-32 ml-2 z-30">
               <SeeCredential />
             </div>
+
+            {/* Image */}
             <img
               className={`${
-                cert.type === "small-top" 
-                  ? "rounded-[1rem] rounded-tl-[2rem]" 
+                cert.type === "small-top"
+                  ? "rounded-[1rem] rounded-tl-[2rem]"
                   : "rounded-[1rem]"
-              } w-full h-full bg-green-50`}
+              } w-full h-full bg-black`}
               src={cert.image}
               alt={`Certificate ${cert.id}`}
             />
@@ -80,9 +101,21 @@ const Certificate = () => {
   const renderMobileCertificates = () => {
     return (
       <div className="flex flex-col gap-5 mt-10">
-        {certificateData.map(cert => (
-          <a href={cert.link} key={cert.id} className="relative">
-            <div className="absolute bottom-4 left-4">
+        {certificateData.map((cert) => (
+          <a
+            href={cert.link}
+            key={cert.id}
+            className="relative group overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
+
+            {/* Title Centered */}
+            <div className="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h3 className="text-white text-3xl leading-relaxed font-semibold text-center px-4">
+                {cert.title}
+              </h3>
+            </div>
+            <div className="absolute bottom-4 left-4 z-30">
               <SeeCredential />
             </div>
             <img
@@ -95,7 +128,6 @@ const Certificate = () => {
       </div>
     );
   };
-
 
   return (
     <div className="bg-[#0b0b0d] px-6 sm:px-10 xl:px-20 pt-36">
@@ -116,9 +148,13 @@ const Certificate = () => {
 
       {isDesktop ? (
         <div className="flex gap-5 mt-16">
-          {renderCertificate(certificateData.find(cert => cert.type === "large-left"))}
+          {renderCertificate(
+            certificateData.find((cert) => cert.type === "large-left")
+          )}
           {renderSmallCertificates()}
-          {renderCertificate(certificateData.find(cert => cert.type === "large-right"))}
+          {renderCertificate(
+            certificateData.find((cert) => cert.type === "large-right")
+          )}
         </div>
       ) : (
         renderMobileCertificates()

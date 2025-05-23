@@ -74,7 +74,7 @@ const Footer2 = () => {
         <RevealLinks />
       </div>
       <div>
-        <p className="uppercase font-semibold text-2xl mb-5 mt-10"> - CONTACT ME</p>
+        <p className="uppercase font-semibold text-2xl mb-5 mt-10 2xl:mt-0" > - CONTACT ME</p>
         <FlipLink href="#">WHATSAPP</FlipLink>
         <FlipLink href="#">EMAIl</FlipLink>
       </div>

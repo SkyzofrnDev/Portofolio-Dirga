@@ -2,29 +2,33 @@
   {
     "id": 1,
     "type": "large-left",
-    "image": "/path/to/certificate1.jpg",
+    "image": "/Certificate/dbs.png",
     "link": "https://credential-link-1.com",
-    "className": "h-96 w-1/4"
+    "className": "h-96 w-1/4",
+    "title": "Fullstack Developer"
   },
   {
     "id": 2,
     "type": "small-top",
     "image": "/path/to/certificate2.jpg",
     "link": "https://credential-link-2.com",
-    "className": "h-48 w-full"
+    "className": "h-48 w-full",
+    "title": "Fullstack Developer"
   },
   {
     "id": 3,
     "type": "small-bottom",
     "image": "/path/to/certificate3.jpg",
     "link": "https://credential-link-3.com",
-    "className": "h-44 w-full"
+    "className": "h-44 w-full",
+    "title": "Fullstack Developer"
   },
   {
     "id": 4,
     "type": "large-right",
     "image": "/path/to/certificate4.jpg",
     "link": "https://credential-link-4.com",
-    "className": "h-96 w-1/2"
+    "className": "h-96 w-1/2",
+    "title": "Fullstack Developer"
   }
 ]

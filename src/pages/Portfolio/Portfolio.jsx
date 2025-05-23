@@ -8,6 +8,7 @@ import {
   JobTitle,
   Journey,
   MyProject,
+  MyProject2,
   MySkill,
   Qoute,
 } from "../../layout";
@@ -42,7 +43,8 @@ const Portfolio = () => {
         <About />
         <JobTitle />
         <Certificate />
-        <MyProject />
+        {/* <MyProject /> */}
+        <MyProject2/>
         <Journey />
         <MySkill />
         <Qoute>

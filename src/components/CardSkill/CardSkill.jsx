@@ -17,15 +17,15 @@ const CardSkill = () => {
           <div className="card-container">
             <img
               src=""
-              className="w-[150px] h-[200px] md:w-[230px] md:h-[290px] rounded-3xl bg-gray-500 block"
+              className="w-[150px] h-[200px] md:w-[230px] md:h-[290px] xl:w-[350px] xl:h-[430px] rounded-3xl bg-gray-500 block"
               style={{ outline: 'none', border: 'none' }}
               alt=""
             />
-            <div className="absolute top-0 left-0 ml-3 mt-3 bg-[#0b0b0d] rounded-full px-1.5 md:px-5 py-1">
-              <p className="twcen md:text-xl tracking-wide">{skill.category}</p>
+            <div className="absolute top-0 left-0 ml-3 mt-3 bg-[#0b0b0d] rounded-full px-1.5 xl:px-9 xl:py-2 md:px-5 py-1">
+              <p className="twcen md:text-xl xl:text-3xl tracking-wide">{skill.category}</p>
             </div>
             <div 
-              className="display bg-[#0b0b0d] rounded-b-3xl p-2 md:p-5"
+              className="display bg-[#0b0b0d] rounded-b-3xl p-2 xl:p-7 md:p-5"
               style={{
                 transform: hoveredIndex === index ? 'translateY(0)' : 'translateY(100%)',
                 opacity: hoveredIndex === index ? 1 : 0,
@@ -39,7 +39,7 @@ const CardSkill = () => {
                   alt="" 
  
                 />
-                <p className="twcen md:text-3xl tracking-wider">{skill.skill}</p>
+                <p className="twcen md:text-3xl xl:text-5xl tracking-wider">{skill.skill}</p>
               </div>
             </div>
           </div>
