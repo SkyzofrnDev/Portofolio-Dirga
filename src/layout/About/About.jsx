@@ -36,7 +36,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="overflow-x-hidden justify-center mt-10">
+    <div className=" rounded-t-[4rem] overflow-x-hidden justify-center mt-10">
       <div className="rounded bg-[#0b0b0d] text-white px-6 md:px-10 lg:px-20 py-10">
         <div className="flex flex-col lg:flex-row w-full gap-10 items-center lg:items-center mt-10 items justify-center">
           {/* Foto */}
@@ -46,7 +46,7 @@ const About = () => {
               className="w-full object-cover aspect-square"
               alt="Profile"
             />
-            <p className="text-black font-semibold poppins uppercase text-center text-lg md:text-xl mt-2">
+            <p className="text-black font-semibold poppins uppercase text-lg md:text-xl mt-2">
               Dirga Hardeka Agustiantara
             </p>
           </div>
@@ -54,7 +54,7 @@ const About = () => {
           {/* Text */}
           <p
             ref={containerRef}
-            className="w-full text-xl sm:text-2xl md:text-3xl leading-relaxed flex flex-wrap gap-x-2"
+            className="w-full text-xl sm:text-2xl md:text-3xl/10 mb-20 leading-relaxed  flex flex-wrap gap-x-2"
           >
             {content.split(" ").map((word, i) => (
               <span
