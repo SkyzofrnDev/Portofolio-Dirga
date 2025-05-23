@@ -7,13 +7,12 @@ const JobTitle = () => {
       <div className="py-5">
         <TextSlider defaultVelocity={2} numRows={1}>
           <div className="flex gap-5 items-center">
-            UI UX {" "}
+            UI UX{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="96"
-              height="96"
               viewBox="0 0 96 96"
               fill="none"
+              className="w-8 h-8 sm:w-10 sm:h-16 md:w-20"
             >
               <circle cx="47.6133" cy="47.6134" r="47.6133" fill="#0b0b0d" />
               <path
@@ -21,13 +20,12 @@ const JobTitle = () => {
                 fill="white"
               />
             </svg>{" "}
-            FRONT END DEV {" "}
+            FRONT END DEV{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="96"
-              height="96"
               viewBox="0 0 96 96"
               fill="none"
+              className="w-8 h-8 sm:w-10 sm:h-16 md:w-20"
             >
               <circle cx="47.6133" cy="47.6134" r="47.6133" fill="#0b0b0d" />
               <path
@@ -35,13 +33,12 @@ const JobTitle = () => {
                 fill="white"
               />
             </svg>{" "}
-            BACKEND {" "}
+            BACKEND{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="96"
-              height="96"
               viewBox="0 0 96 96"
               fill="none"
+              className="w-8 h-8 sm:w-10 sm:h-16 md:w-20"
             >
               <circle cx="47.6133" cy="47.6134" r="47.6133" fill="#0b0b0d" />
               <path
