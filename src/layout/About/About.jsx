@@ -38,7 +38,7 @@ const About = () => {
   return (
     <div className=" rounded-t-[4rem] overflow-x-hidden justify-center mt-10">
       <div className="rounded bg-[#0b0b0d] text-white px-6 md:px-10 lg:px-20 py-10">
-        <div className="flex flex-col lg:flex-row w-full gap-10 items-center lg:items-center mt-10 items justify-center">
+        <div className="flex flex-col xl:flex-row w-full gap-10 items-center lg:items-center mt-10 items justify-center">
           {/* Foto */}
           <div className="bg-white p-5 w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
             <img
@@ -54,7 +54,7 @@ const About = () => {
           {/* Text */}
           <p
             ref={containerRef}
-            className="w-full text-xl sm:text-2xl md:text-3xl/10 mb-20 leading-relaxed  flex flex-wrap gap-x-2"
+            className="w-full text-xl sm:text-3xl sm:leading-relaxed lg:2xl/normal 2xl:text-3xl/normal mb-20 leading-relaxed  flex flex-wrap gap-x-2"
           >
             {content.split(" ").map((word, i) => (
               <span

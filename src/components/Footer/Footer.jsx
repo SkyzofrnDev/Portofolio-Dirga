@@ -34,7 +34,7 @@ const FlipLink = ({ children, href }) => {
           </motion.span>
         ))}
       </div>
-      <div className="absolute inset-0 text-[#1b63ff]">
+      <div className="absolute inset-0">
         {text.split("").map((l, i) => (
           <motion.span
             variants={{
@@ -100,16 +100,16 @@ const Footer = () => {
   const [showArrowWhatsapp, setShowArrowWhatsapp] = useState(false);
 
   return (
-    <div className="text-white radio px-20 pt-20 pb-10 flex items-start gap-20 bg-[#0b0b0d] h-fit">
+    <div className="text-white radio px-20 pt-20 pb-10 flex items-start gap-20 bg-[#131313] h-fit">
       <div className="uppercase font-semibold text-2xl">
-        <p className="mb-5"> - AGUS DEV</p>
-        <RevealLinks />
+        <p className="mb-5">AGUS DEV</p>
+        <p>FRONT END</p>
+        <p>UI & UX</p>
+        <p> WEN DESIGN</p>
       </div>
       <div>
         <p className="uppercase font-semibold text-2xl mb-5">CONTACT ME</p>
-        <FlipLink href="#">WHATSAPP</FlipLink>
-        <FlipLink href="#">EMAIl</FlipLink>
-        {/* <div className="flex items-center gap-5 mb-5">
+        <div className="flex items-center gap-5 mb-5">
           <p
             className="transition-all duration-200 ease-in-out relative group"
             onMouseEnter={() => setShowArrowEmail(true)}
@@ -142,9 +142,9 @@ const Footer = () => {
             }`}
             alt=""
           />
-        </div> */}
+        </div>
       </div>
-      {/* <div>
+      <div>
         <p className="uppercase font-semibold text-2xl mb-5">FOLLOW ME ON</p>
         <div className="flex gap-4">
           {SosialMedia.map((media, index) => (
@@ -159,7 +159,7 @@ const Footer = () => {
             </a>
           ))}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
-import { Copyright, FollowingCursor, Footer, Navbar } from "../../components";
+import { Copyright, FollowingCursor, Footer, Footer2, Navbar } from "../../components";
 import {
   About,
   Certificate,
@@ -49,7 +49,7 @@ const Portfolio = () => {
           Unlock your true potential. Believe, take action, and achieve
           greatness, because you are unstoppable.
         </Qoute>
-        <Footer />
+        <Footer2/>
         <Copyright />
       </div>
     </>
