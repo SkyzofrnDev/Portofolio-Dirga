@@ -4,13 +4,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ScrollReveal = ({
+const ScrollRevealComponent = ({
   children,
   scrollContainerRef,
   enableBlur = true,
-  baseOpacity = 0.1,
-  baseRotation = 3,
-  blurStrength = 4,
+  baseOpacity = 0,
+  baseRotation = 1,
+  blurStrength = 100,
   containerClassName = "",
   textClassName = "",
   rotationEnd = "bottom bottom",
@@ -105,4 +105,4 @@ const ScrollReveal = ({
   );
 };
 
-export default ScrollReveal;
+export default ScrollRevealComponent;
