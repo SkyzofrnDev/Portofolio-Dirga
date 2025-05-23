@@ -124,13 +124,13 @@ const TextQoute = ({
   return (
     <div className="bg-[#0b0b0d]">
       <div className="bg-[url('/bgqoutew.png')] bg-cover text-white w-full h-full p-10 px-16 rounded-t-[60px]">
-        <p className="twcen text-9xl font-extrabold h-20">“</p>
+        <p className="twcen text-8xl md:text-9xl font-extrabold h-20">“</p>
         <h2
           ref={containerRef}
           className={`py-5 overflow-hidden text-white text-6xl uppercase radio font-semibold ${containerClassName}`}
         >
           <span
-            className={`inline-block text-[3.7rem] leading-[1.5] ${textClassName}`}
+            className={`inline-block text-3xl sm:text-5xl md:text-[3.7rem] leading-[1.5] ${textClassName}`}
           >
             {splitText}
           </span>
@@ -141,7 +141,7 @@ const TextQoute = ({
             ref={lineRef}
             className="border-2 border-white h-0 w-1/2 origin-left scale-x-0"
           ></div>
-          <p className="twcen text-9xl rotate-180 font-extrabold h-20">“</p>
+          <p className="twcen text-8xl md:text-9xl rotate-180 font-extrabold h-20">“</p>
         </div>
         <p
           ref={authorRef}
