@@ -68,7 +68,7 @@ const Certificate = () => {
   };
 
   return (
-    <div className="bg-[#131313] px-20 pt-36">
+    <div className="bg-[#0b0b0d] px-20 pt-36">
       <div className="flex items-center">
         <div className="Radio mr-36 text-white text-5xl font-bold uppercase text-nowrap text-justify tracking-wide">
           <p className="">Exploring the Milestones</p>

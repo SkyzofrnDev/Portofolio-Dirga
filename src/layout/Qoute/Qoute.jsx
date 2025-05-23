@@ -122,7 +122,7 @@ const TextQoute = ({
   ]);
 
   return (
-    <div className="bg-[#131313]">
+    <div className="bg-[#0b0b0d]">
       <div className="bg-[url('/bgqoutew.png')] bg-cover text-white w-full h-full p-10 px-16 rounded-t-[60px]">
         <p className="twcen text-9xl font-extrabold h-20">“</p>
         <h2

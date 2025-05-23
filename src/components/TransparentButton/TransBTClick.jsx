@@ -5,7 +5,7 @@ import "./Style.css"
 const TransBTClick = ({ width, isExpanding }) => {
   return (
     <div 
-      className="relative border-4 flex items-center poppins border-[#1e1e1e] px-5 h-16"
+      className="relative border-4 flex items-center poppins border-[#0b0b0d] px-5 h-16"
       style={{ 
         width: width ? `${width}px` : '200px',
         minWidth: '200px',

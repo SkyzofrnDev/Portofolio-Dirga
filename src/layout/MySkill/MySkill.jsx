@@ -21,7 +21,7 @@ const ShinyText = ({disabled, className, animationDuration, text}) => {
 };
 const MySkill = () => {
   return (
-    <div className="bg-[#131313] text-white px-20">
+    <div className="bg-[#0b0b0d] text-white px-20">
       <div className="flex justify-between items-end  ">
         <div className="uppercase">
           <p className="font-semibold text-3xl">MY SKILL</p>

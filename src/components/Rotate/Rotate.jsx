@@ -57,7 +57,7 @@ const Rotate = () => {
           </filter>
         </defs>
       </svg>
-      <div className="ml-8 text-base font-normal tracking-wide px-3 bg-[#1e1e1e] twcent text-white w-fit border-2 border-white rounded-lg">
+      <div className="ml-8 text-base font-normal tracking-wide px-3 bg-[#0b0b0d] twcent text-white w-fit border-2 border-white rounded-lg">
         <p>AGUSDEV</p>
       </div>
     </div>

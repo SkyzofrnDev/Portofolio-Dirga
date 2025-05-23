@@ -59,7 +59,7 @@ const Herosection = () => {
 
   return (
     <div className="px-20  h-screen bg-center flex flex-col justify-center items-start text-9xl font-[750]">
-      <div className="text-[#1E1E1E] grid grid-cols-2 gap-80 mt-16 ">
+      <div className="text-[#0b0b0d] grid grid-cols-2 gap-80 mt-16 ">
         <div className="tracking-tight">
           <p>INNOVATION</p>
           <div className="flex mt-10">
@@ -82,7 +82,7 @@ const Herosection = () => {
                 viewBox="0 0 96 96"
                 fill="none"
               >
-                <circle cx="47.6133" cy="47.6134" r="47.6133" fill="#1E1E1E" />
+                <circle cx="47.6133" cy="47.6134" r="47.6133" fill="#0b0b0d" />
                 <path
                   d="M48.2237 19.5338L39.7332 39.9553L17.0919 47.6134L39.7332 55.2715L48.2237 75.693L56.7142 55.2715L79.3554 47.6134L56.7142 39.9553L48.2237 19.5338Z"
                   fill="white"

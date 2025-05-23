@@ -3,7 +3,7 @@ import "../../index.css";
 const Navbar = () => {
   return (
     <div className="z-10 flex justify-center mx-16 ">
-      <div className="fixed z-10 w-[92%] max-w-full twcen text-white px-7 pr-10 pt-7 py-5 bg-[#1E1E1E] rounded-b-3xl text-3xl justify-between flex overflow-hidden">
+      <div className="fixed z-10 w-[92%] max-w-full twcen text-white px-7 pr-10 pt-7 py-5 bg-[#0b0b0d] rounded-b-3xl text-3xl justify-between flex overflow-hidden">
         <div>
           <p className="">AGUSDEV</p>
         </div>

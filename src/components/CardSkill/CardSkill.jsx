@@ -21,11 +21,11 @@ const CardSkill = () => {
               style={{ outline: 'none', border: 'none' }}
               alt=""
             />
-            <div className="absolute top-0 left-0 ml-3 mt-3 bg-[#1E1E1E] rounded-full px-5 py-1">
+            <div className="absolute top-0 left-0 ml-3 mt-3 bg-[#0b0b0d] rounded-full px-5 py-1">
               <p className="twcen text-xl tracking-wide">{skill.category}</p>
             </div>
             <div 
-              className="display bg-[#1E1E1E] rounded-b-3xl p-5"
+              className="display bg-[#0b0b0d] rounded-b-3xl p-5"
               style={{
                 transform: hoveredIndex === index ? 'translateY(0)' : 'translateY(100%)',
                 opacity: hoveredIndex === index ? 1 : 0,

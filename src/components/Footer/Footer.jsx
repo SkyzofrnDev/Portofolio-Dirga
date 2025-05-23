@@ -34,7 +34,7 @@ const FlipLink = ({ children, href }) => {
           </motion.span>
         ))}
       </div>
-      <div className="absolute inset-0 text-[#1299F5]">
+      <div className="absolute inset-0 text-[#1b63ff]">
         {text.split("").map((l, i) => (
           <motion.span
             variants={{
@@ -100,7 +100,7 @@ const Footer = () => {
   const [showArrowWhatsapp, setShowArrowWhatsapp] = useState(false);
 
   return (
-    <div className="text-white radio px-20 pt-20 pb-10 flex items-start gap-20 bg-[#131313] h-fit">
+    <div className="text-white radio px-20 pt-20 pb-10 flex items-start gap-20 bg-[#0b0b0d] h-fit">
       <div className="uppercase font-semibold text-2xl">
         <p className="mb-5">AGUS DEV</p>
         <RevealLinks />

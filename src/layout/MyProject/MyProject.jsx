@@ -8,7 +8,7 @@ const MyProject = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="px-20 bg-[#131313] pt-44 text-white">
+    <div className="px-20 bg-[#0b0b0d] pt-44 text-white">
       <div className="flex justify-between mb-20">
         <p className="font-bold text-5xl text-white/70">
           <ShinyTextComponent text="MY PROJECT" disabled={false} speed={3}/>

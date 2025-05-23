@@ -3,7 +3,7 @@ import journeyData from "./dataJourney.json";
 
 const Journey = () => {
   return (
-    <div className="px-20 bg-[#131313] pt-44 text-white pb-52">
+    <div className="px-20 bg-[#0b0b0d] pt-44 text-white pb-52">
       <div className="flex flex-col text-center mb-28">
         <p className="text-4xl uppercase font-bold radio px-36">
           Exploring My Professional Adventures

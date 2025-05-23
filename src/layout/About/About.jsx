@@ -3,7 +3,7 @@ import "./Style.css";
 const About = () => {
   return (
     <div className="overflow-x-hidden justify-center mt-10">
-      <div className="ronded bg-[#131313] text-white px-20 p-10">
+      <div className="ronded bg-[#0b0b0d] text-white px-20 p-10">
         <div className="flex gap-16 items-center mt-20">
           <div className="bg-white p-5 w-fit h-fit">
             <img src="/Profile/Profile2.jpg" className="w-[900px] aspect-square object-cover" alt="" />
