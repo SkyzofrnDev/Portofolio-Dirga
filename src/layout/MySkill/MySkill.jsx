@@ -4,7 +4,7 @@ import { CardSkill } from "../../components";
 const ShinyText = ({disabled, className, animationDuration, text}) => {
   return(
   <div
-    className={`text-[#1299F5] bg-clip-text inline-block ${
+    className={`text-[#1a50ffbb] bg-clip-text inline-block ${
       disabled ? "" : "animate-shine"
     } ${className}`}
     style={{
