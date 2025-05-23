@@ -1,5 +1,5 @@
 import React from "react";
-import { CardSkill } from "../../components";
+import { CardSkill, ShinyTextComponent } from "../../components";
 
 const MySkill = () => {
   return (
@@ -8,7 +8,7 @@ const MySkill = () => {
         <div className="uppercase">
           <p className="font-semibold text-3xl">MY SKILL</p>
           <p className="font-bold text-6xl mt-10">
-            My <span className="text-[#1299F5]">Expertise</span> <p>at a Glance</p>
+            My <span className="text-[#1299F5]"><ShinyTextComponent  text="Expertise" disabled={false} speed={3}/></span> <p>at a Glance</p>
           </p>
         </div>
         <div className="">
