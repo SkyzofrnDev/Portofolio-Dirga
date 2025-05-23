@@ -11,7 +11,7 @@ const FlipLink = ({ children, href }) => {
       initial="initial"
       whileHover="hovered"
       href={href}
-      className="relative block overflow-hidden whitespace-nowrap text-xl font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl"
+      className="relative block overflow-hidden whitespace-nowrap text-4xl font-black uppercase sm:text-6xl md:text-7xl lg:text-8xl"
       style={{ lineHeight: 0.85 }}
     >
       <div>
@@ -68,13 +68,13 @@ export const RevealLinks = () => {
 };
 const Footer2 = () => {
   return (
-    <div className="text-white radio px-20 pt-20 pb-10 flex items-start gap-20 bg-[#0b0b0d] h-fit">
+    <div className="text-white radio px-20 pt-20 pb-10 2xl:flex items-start gap-20 bg-[#0b0b0d] h-fit">
       <div className="uppercase font-semibold text-2xl">
         <p className="mb-5"> - AGUS DEV</p>
         <RevealLinks />
       </div>
       <div>
-        <p className="uppercase font-semibold text-2xl mb-5">CONTACT ME</p>
+        <p className="uppercase font-semibold text-2xl mb-5 mt-10"> - CONTACT ME</p>
         <FlipLink href="#">WHATSAPP</FlipLink>
         <FlipLink href="#">EMAIl</FlipLink>
       </div>
