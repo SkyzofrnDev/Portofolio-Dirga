@@ -1,9 +1,19 @@
-import React from "react";
+import {useState,useEffect} from "react";
 import { ButtonCattegory, SeeCredential } from "../../components";
 import "./Style.css";
 import certificateData from "./dataCertificate.json";
 
 const Certificate = () => {
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1150);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 1150);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const renderCertificate = (cert) => {
     switch (cert.type) {
       case "large-left":
@@ -67,28 +77,52 @@ const Certificate = () => {
     );
   };
 
+  const renderMobileCertificates = () => {
+    return (
+      <div className="flex flex-col gap-5 mt-10">
+        {certificateData.map(cert => (
+          <a href={cert.link} key={cert.id} className="relative">
+            <div className="absolute bottom-4 left-4">
+              <SeeCredential />
+            </div>
+            <img
+              className="w-full rounded-xl bg-gray-800"
+              src={cert.image}
+              alt={`Certificate ${cert.id}`}
+            />
+          </a>
+        ))}
+      </div>
+    );
+  };
+
+
   return (
-    <div className="bg-[#0b0b0d] px-20 pt-36">
-      <div className="flex items-center">
-        <div className="Radio mr-36 text-white text-5xl font-bold uppercase text-nowrap text-justify tracking-wide">
-          <p className="">Exploring the Milestones</p>
+    <div className="bg-[#0b0b0d] px-6 sm:px-10 xl:px-20 pt-36">
+      <div className="flex flex-col 2xl:flex-row 2xl:items-center">
+        <div className="Radio mr-0 2xl:mr-36 text-white text-4xl sm:text-5xl font-bold uppercase tracking-wide">
+          <p>Exploring the Milestones</p>
           <p>
-            of My
-            <span className="text-[#2A51D7]"> Success</span>
+            of My <span className="text-[#2A51D7]">Success</span>
           </p>
-          <p className="font-normal capitalize text-white text-2xl twcen mt-5">
+          <p className="font-normal capitalize text-white text-xl sm:text-2xl mt-5">
             Reflecting on My Path to Excellence
           </p>
         </div>
-        <div className="">
+        <div className="mt-10 2xl:mt-0">
           <ButtonCattegory />
         </div>
       </div>
-      <div className="pt-30 flex gap-5 mt-16">
-        {renderCertificate(certificateData.find(cert => cert.type === "large-left"))}
-        {renderSmallCertificates()}
-        {renderCertificate(certificateData.find(cert => cert.type === "large-right"))}
-      </div>
+
+      {isDesktop ? (
+        <div className="flex gap-5 mt-16">
+          {renderCertificate(certificateData.find(cert => cert.type === "large-left"))}
+          {renderSmallCertificates()}
+          {renderCertificate(certificateData.find(cert => cert.type === "large-right"))}
+        </div>
+      ) : (
+        renderMobileCertificates()
+      )}
     </div>
   );
 };
