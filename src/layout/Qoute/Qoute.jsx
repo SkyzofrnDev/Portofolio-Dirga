@@ -130,7 +130,7 @@ const TextQoute = ({
           className={`py-5 overflow-hidden text-white text-6xl uppercase radio font-semibold ${containerClassName}`}
         >
           <span
-            className={`inline-block text-[clamp(1.6rem,4vw,3rem)] leading-[1.5] ${textClassName}`}
+            className={`inline-block text-[3.7rem] leading-[1.5] ${textClassName}`}
           >
             {splitText}
           </span>

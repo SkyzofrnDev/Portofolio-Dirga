@@ -102,7 +102,7 @@ const Footer = () => {
   return (
     <div className="text-white radio px-20 pt-20 pb-10 flex items-start gap-20 bg-[#0b0b0d] h-fit">
       <div className="uppercase font-semibold text-2xl">
-        <p className="mb-5">AGUS DEV</p>
+        <p className="mb-5"> - AGUS DEV</p>
         <RevealLinks />
       </div>
       <div>
