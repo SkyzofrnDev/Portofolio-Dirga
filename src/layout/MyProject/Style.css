@@ -104,7 +104,9 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
+    position: relative; /* ⬅️ TAMBAHKAN INI */
   }
+  
 
   .star, .arrow {
     position: absolute;

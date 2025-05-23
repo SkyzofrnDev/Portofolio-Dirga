@@ -86,7 +86,7 @@ const Certificate = () => {
               <SeeCredential />
             </div>
             <img
-              className="w-full rounded-xl bg-gray-800"
+              className="w-full h-56 rounded-2xl bg-gray-800"
               src={cert.image}
               alt={`Certificate ${cert.id}`}
             />

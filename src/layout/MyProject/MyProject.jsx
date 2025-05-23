@@ -9,11 +9,11 @@ const MyProject = () => {
 
   return (
     <div className="px-20 bg-[#0b0b0d] pt-44 text-white">
-      <div className="flex justify-between mb-20">
+      <div className="xl:flex justify-between mb-20">
         <p className="font-bold text-5xl text-white/70">
           <ShinyTextComponent text="MY PROJECT" disabled={false} speed={3}/>
         </p>
-        <p className="w-2/3 text-2xl">
+        <p className="w-2/3 text-2xl mt-10 xl:mt-0">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita id
           repudiandae quibusdam, totam earum harum? temporibus!
         </p>
@@ -29,12 +29,12 @@ const MyProject = () => {
             onMouseLeave={() => setHoveredIndex(null)}
           >
             <div>
-              <div className="flex items-center text-white/50 justify-between">
-                <p className="my-10 w-1/2 text-4xl Judul radio text-nowrap">
+              <div className="xl:flex items-center text-white/50 justify-between">
+                <p className="xl:my-10 mt-10  w-1/2 text-4xl Judul radio xl:text-nowrap">
                   {project.title}
                 </p>
-                <p className="text-xl dirga radio mr-40 text-right">{project.desc}</p>
-                <div className="containe w-fit mr-20">
+                <p className="mb-10 xl:mb-0 text-xl text-wrap dirga radio mr-40 xl:text-right">{project.desc}</p>
+                <div className="containe w-fit mr-20 sm:hidden xl:flex relative z-10">
                   <div className="star">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
