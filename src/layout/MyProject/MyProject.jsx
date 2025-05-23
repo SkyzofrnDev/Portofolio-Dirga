@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import projects from "./dataProject.json";
 import "./Style.css";
+import { ShinyTextComponent } from "../../components";
 
 const MyProject = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -9,7 +10,9 @@ const MyProject = () => {
   return (
     <div className="px-20 bg-[#131313] pt-44 text-white">
       <div className="flex justify-between mb-20">
-        <p className="font-bold text-5xl">MY PROJECT</p>
+        <p className="font-bold text-5xl text-white/70">
+          <ShinyTextComponent text="MY PROJECT" disabled={false} speed={3}/>
+        </p>
         <p className="w-2/3 text-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita id
           repudiandae quibusdam, totam earum harum? temporibus!
