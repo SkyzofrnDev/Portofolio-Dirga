@@ -88,7 +88,7 @@ const Certificate = () => {
                 cert.type === "small-top"
                   ? "rounded-[1rem] rounded-tl-[2rem]"
                   : "rounded-[1rem]"
-              } w-full h-full bg-black`}
+              } w-full h-44`}
               src={cert.image}
               alt={`Certificate ${cert.id}`}
             />

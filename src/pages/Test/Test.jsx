@@ -1,12 +1,9 @@
-import React from "react";
-import { MyProject2 } from "../../layout";
+import React from 'react'
 
 const Test = () => {
   return (
-    <div className="bg-black">
+    <div>Test</div>
+  )
+}
 
-    </div>
-  );
-};
-
-export default Test;
+export default Test

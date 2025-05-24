@@ -10,7 +10,7 @@
   {
     "id": 2,
     "type": "small-top",
-    "image": "/path/to/certificate2.jpg",
+    "image": "/Certificate/bnsp.png",
     "link": "https://credential-link-2.com",
     "className": "h-48 w-full",
     "title": "Fullstack Developer"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "type": "small-bottom",
-    "image": "/path/to/certificate3.jpg",
+    "image": "/Certificate/bnsp.png",
     "link": "https://credential-link-3.com",
     "className": "h-44 w-full",
     "title": "Fullstack Developer"
