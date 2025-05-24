@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 const Journey = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 1000, once: false });
   }, []);
 
   return (
