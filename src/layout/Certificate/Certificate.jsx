@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { ButtonCattegory, SeeCredential } from "../../components";
-import "./Style.css";
 import certificateData from "./dataCertificate.json";
 
 const Certificate = () => {

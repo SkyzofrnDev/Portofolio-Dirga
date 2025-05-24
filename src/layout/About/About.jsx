@@ -76,7 +76,7 @@ const About = () => {
             ) : (
               <p
                 ref={containerRef}
-                className="flex flex-wrap gap-x-2 text-4xl"
+                className="flex flex-wrap gap-x-2 text-3xl text-center lg:text-left xl:text-4xl"
               >
                 {content.split(" ").map((word, i) => (
                   <span

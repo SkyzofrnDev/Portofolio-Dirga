@@ -1,7 +1,7 @@
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 
-const Test = () => {
+const ProjectDesign = () => {
   return (
     <section className="bg-neutral-950 p-4 md:p-8">
       <div className="mx-auto max-w-5xl">
@@ -149,4 +149,4 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
   );
 };
 
-export default Test;
+export default ProjectDesign;
