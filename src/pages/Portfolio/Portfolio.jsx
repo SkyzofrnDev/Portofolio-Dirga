@@ -10,6 +10,7 @@ import {
   MyProject,
   MyProject2,
   MySkill,
+  ProjectDesign,
   Qoute,
 } from "../../layout";
 
@@ -47,6 +48,7 @@ const Portfolio = () => {
         <MyProject2/>
         <Journey />
         <MySkill />
+        <ProjectDesign />
         <Qoute>
           Unlock your true potential. Believe, take action, and achieve
           greatness, because you are unstoppable.

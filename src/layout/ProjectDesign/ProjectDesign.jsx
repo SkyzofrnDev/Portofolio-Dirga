@@ -3,8 +3,27 @@ import React, { useRef } from "react";
 
 const ProjectDesign = () => {
   return (
-    <section className="bg-neutral-950 p-4 md:p-8">
-      <div className="mx-auto max-w-5xl">
+    <section className="bg-neutral-950 px-24 text-white">
+      <div className=" lg:flex justify-between items-end ">
+        <div className="uppercase">
+          <p className="font-semibold text-3xl">MY SKILL</p>
+          <p className="font-bold text-5xl xl:text-6xl mt-10">
+            My <span className="text-[#1299F5]">Expertise</span>{" "}
+            <p>at a Glance</p>
+          </p>
+        </div>
+        <div className="">
+          <p className="text-xl mt-10 lg:mt-0 ">
+            Explore the skills that define my professional{" "}
+            <p>journey and drive my accomplishments.</p>
+          </p>
+          <div className="flex mt-5">
+            <p className="font-semibold mr-5 text-xl">DISCOVER ME</p>
+            <img src="/Arrow.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div className=" max-w-full ">
         <Link
           heading="About"
           subheading="Learn what we do here"
@@ -141,8 +160,15 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
         className="relative z-10 p-4"
       >
         {/* Custom SVG arrow instead of react-icon */}
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-8 h-8 text-neutral-50">
-          <path fill="currentColor" d="M12.293 5.707a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 11-1.414-1.414L16.586 13H4a1 1 0 110-2h12.586l-4.293-4.293a1 1 0 010-1.414z" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          className="w-8 h-8 text-neutral-50"
+        >
+          <path
+            fill="currentColor"
+            d="M12.293 5.707a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 11-1.414-1.414L16.586 13H4a1 1 0 110-2h12.586l-4.293-4.293a1 1 0 010-1.414z"
+          />
         </svg>
       </motion.div>
     </motion.a>
