@@ -2,24 +2,24 @@ import React from "react";
 import { FollowingMenu, ShinyTextComponent } from "../../components";
 const demoItems = [
   {
-    link: "#",
+    link: "/",
     text: "Portfolio AgusDev",
-    image: "https://picsum.photos/600/400?random=1",
+    image: "/Project/AgusDev.png",
   },
   {
     link: "#",
     text: "The Unwanted PErson",
-    image: "https://picsum.photos/600/400?random=2",
+    image: "/Project/Unwanted.png",
   },
   {
     link: "#",
-    text: "Web RPL",
-    image: "https://picsum.photos/600/400?random=3",
+    text: "Website RPL",
+    image: "/Project/WebRpl.png",
   },
   {
-    link: "#",
+    link: "https://clev.io/LCGNAI2025/kategorismk/Dirga%20Hardeka%20Agustiantara%20%26%20Rivandra%20Abhista%20Adam%C2%A0Prassaya-SMKN%201%20CIBINONG/",
     text: "BOGOR REBORN",
-    image: "https://picsum.photos/600/400?random=4",
+    image: "/Project/BogorReborn.png",
   },
 ];
 

@@ -6,7 +6,7 @@ const ProjectDesign = () => {
     <section className="bg-neutral-950 px-24 text-white">
       <div className=" lg:flex justify-between items-end ">
         <div className="uppercase">
-          <p className="font-semibold text-3xl">MY SKILL</p>
+          <p className="font-semibold text-3xl">My Design Work</p>
           <p className="font-bold text-5xl xl:text-6xl mt-10">
             My <span className="text-[#1299F5]">Expertise</span>{" "}
             <p>at a Glance</p>
