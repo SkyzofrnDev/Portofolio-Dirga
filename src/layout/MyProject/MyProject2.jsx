@@ -20,6 +20,10 @@ const demoItems = [
     link: "https://clev.io/LCGNAI2025/kategorismk/Dirga%20Hardeka%20Agustiantara%20%26%20Rivandra%20Abhista%20Adam%C2%A0Prassaya-SMKN%201%20CIBINONG/",
     text: "BOGOR REBORN",
     image: "/Project/BogorReborn.png",
+  },  {
+    link: "https://clev.io/LCGNAI2025/kategorismk/Dirga%20Hardeka%20Agustiantara%20%26%20Rivandra%20Abhista%20Adam%C2%A0Prassaya-SMKN%201%20CIBINONG/",
+    text: "VISTA NUSA",
+    image: "/Project/VistaNusa.png",
   },
 ];
 

@@ -1,5 +1,5 @@
-import React from 'react';
-import { gsap } from 'gsap';
+import React from "react";
+import { gsap } from "gsap";
 
 function FlowingMenu({ items = [] }) {
   return (
@@ -18,16 +18,17 @@ function MenuItem({ link, text, image }) {
   const marqueeRef = React.useRef(null);
   const marqueeInnerRef = React.useRef(null);
 
-  const animationDefaults = { duration: 0.6, ease: 'expo.out' };
+  const animationDefaults = { duration: 0.6, ease: "expo.out" };
 
   const findClosestEdge = (mouseX, mouseY, width, height) => {
     const topEdgeDist = (mouseX - width / 2) ** 2 + mouseY ** 2;
     const bottomEdgeDist = (mouseX - width / 2) ** 2 + (mouseY - height) ** 2;
-    return topEdgeDist < bottomEdgeDist ? 'top' : 'bottom';
+    return topEdgeDist < bottomEdgeDist ? "top" : "bottom";
   };
 
   const handleMouseEnter = (ev) => {
-    if (!itemRef.current || !marqueeRef.current || !marqueeInnerRef.current) return;
+    if (!itemRef.current || !marqueeRef.current || !marqueeInnerRef.current)
+      return;
     const rect = itemRef.current.getBoundingClientRect();
     const edge = findClosestEdge(
       ev.clientX - rect.left,
@@ -36,9 +37,10 @@ function MenuItem({ link, text, image }) {
       rect.height
     );
 
-    gsap.timeline({ defaults: animationDefaults })
-      .set(marqueeRef.current, { y: edge === 'top' ? '-101%' : '101%' })
-      .to(marqueeRef.current, { y: '0%' });
+    gsap
+      .timeline({ defaults: animationDefaults })
+      .set(marqueeRef.current, { y: edge === "top" ? "-101%" : "101%" })
+      .to(marqueeRef.current, { y: "0%" });
   };
 
   const handleMouseLeave = (ev) => {
@@ -51,8 +53,9 @@ function MenuItem({ link, text, image }) {
       rect.height
     );
 
-    gsap.timeline({ defaults: animationDefaults })
-      .to(marqueeRef.current, { y: edge === 'top' ? '-101%' : '101%' });
+    gsap
+      .timeline({ defaults: animationDefaults })
+      .to(marqueeRef.current, { y: edge === "top" ? "-101%" : "101%" });
   };
 
   // GSAP marquee animation
@@ -68,7 +71,7 @@ function MenuItem({ link, text, image }) {
 
   const repeatedMarqueeContent = Array.from({ length: 6 }).map((_, idx) => (
     <React.Fragment key={idx}>
-      <span className="text-[#060606] uppercase font-normal text-[4vh] leading-[1.2] p-[1vh_1vw_0]">
+      <span className="text-[#060606] uppercase text-[4vh] leading-[1.2] p-[1vh_1vw_0]  font-normal ">
         {text}
       </span>
       <div
@@ -96,7 +99,7 @@ function MenuItem({ link, text, image }) {
         ref={marqueeRef}
       >
         <div className="h-full w-[200%] flex" ref={marqueeInnerRef}>
-          <div className="flex items-center relative h-full w-full will-change-transform">
+          <div className="flex items-center relative h-full w-full will-change-transform ">
             {repeatedMarqueeContent}
           </div>
         </div>
