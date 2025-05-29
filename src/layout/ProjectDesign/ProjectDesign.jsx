@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 
 const ProjectDesign = () => {
   return (
-    <section className="bg-neutral-950 px-24 text-white">
+    <section className="bg-[#0b0b0d] px-24 text-white">
       <div className=" lg:flex justify-between items-end ">
         <div className="uppercase">
           <p className="font-semibold text-3xl">My Design Work</p>
