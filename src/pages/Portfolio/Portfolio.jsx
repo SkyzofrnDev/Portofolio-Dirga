@@ -44,10 +44,10 @@ const Portfolio = () => {
         <About />
         <JobTitle />
         <Certificate />
+        <MySkill />
         {/* <MyProject /> */}
         <MyProject2/>
         <Journey />
-        <MySkill />
         <ProjectDesign />
         <Qoute>
           Unlock your true potential. Believe, take action, and achieve
