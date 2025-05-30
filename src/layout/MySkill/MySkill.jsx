@@ -2,8 +2,8 @@ import React from "react";
 import { CardSkill, MovingCardComponent } from "../../components";
 
 const tools = [
-  { img: "/Icons/AdobeIluslator.svg", quote: "Adobe lluslator" },
-  { img: "/Icons/Canva.svg", quote: "Canva" },
+  { img: "/Icons/AdobeIluslator.svg", quote: "Adobe lluslator", "hoverColor": "#3b82f6"},
+  { img: "/Icons/Canva.svg", quote: "Canva","hoverColor": "#3b82f6" },
   { img: "/Icons/Css.svg", quote: "Css" },
   { img: "/Icons/Cursor.svg", quote: "Cursor" },
   { img: "/Icons/Figma.svg", quote: "Figma" },
@@ -41,10 +41,9 @@ const ShinyText = ({ disabled, className, animationDuration, text }) => {
 };
 const MySkill = () => {
   return (
-    <div className="pt-28 mpb-28 bg-[#0b0b0d] text-white px-">
+    <div className="pt-56 pb-26 bg-[#0b0b0d] text-white px-">
       <div className=" justify-between items-end ">
-        <div className="uppercase">
-        </div>
+        <div className="uppercase"></div>
         <div className="h-fit flex items-center justify-center">
           <MovingCardComponent items={tools} direction="right" speed="speed" />
         </div>

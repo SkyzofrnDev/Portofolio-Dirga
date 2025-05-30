@@ -57,9 +57,9 @@ const MovingCardComponent = ({
         {items.map((item, idx) => (
           <li
             key={idx}
-            className="relative max-w-full gap-5 rounded-full bg-[#191920] px-5 py-2 flex items-center justify-center">
+            className="relative max-w-full gap-5 rounded-full bg-[#191920] px-5 py-2 flex items-center justify-center hover:shadow-white shadow-lg">
             <blockquote className="poppins flex items-center justify-center gap-x-2 ">
-              <img src={item.img} alt="" className="w-3"/>
+              <img src={item.img} alt="" className="w-4"/>
               <span className="relative z-20 text-md leading-loose font-light text-neutral-800 dark:text-gray-100">
                 {item.quote}
               </span>
