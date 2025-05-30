@@ -41,7 +41,7 @@ const ShinyText = ({ disabled, className, animationDuration, text }) => {
 };
 const MySkill = () => {
   return (
-    <div className="pt-28 mpb-28 bg-[#0b0b0d] text-white px-20">
+    <div className="pt-28 mpb-28 bg-[#0b0b0d] text-white px-">
       <div className=" justify-between items-end ">
         <div className="uppercase">
         </div>
