@@ -2,10 +2,10 @@ import React from "react";
 import { CardSkill, MovingCardComponent } from "../../components";
 
 const tools = [
-  { img: "/Icons/AdobeIluslator.svg", quote: "Adobe lluslator", "hoverColor": "#3b82f6"},
-  { img: "/Icons/Canva.svg", quote: "Canva","hoverColor": "#3b82f6" },
+  { img: "/Icons/AdobeIluslator.svg", quote: "Adobe Illustrator", hoverColor: "#3b82f6" },
+  { img: "/Icons/Canva.svg", quote: "Canva", hoverColor: "#3b82f6" },
   { img: "/Icons/Css.svg", quote: "Css" },
-  { img: "/Icons/Cursor.svg", quote: "Cursor" },
+  { img: "/Icons/cursor.png", quote: "Cursor" },
   { img: "/Icons/Figma.svg", quote: "Figma" },
   { img: "/Icons/Framer.svg", quote: "Framer" },
   { img: "/Icons/Golang.svg", quote: "Golang" },
@@ -21,6 +21,7 @@ const tools = [
   { img: "/Icons/Vite.svg", quote: "Vite" },
   { img: "/Icons/VsCode.svg", quote: "VsCode" },
 ];
+
 const ShinyText = ({ disabled, className, animationDuration, text }) => {
   return (
     <div
@@ -39,13 +40,14 @@ const ShinyText = ({ disabled, className, animationDuration, text }) => {
     </div>
   );
 };
+
 const MySkill = () => {
   return (
-    <div className="pt-56 pb-26 bg-[#0b0b0d] text-white px-">
-      <div className=" justify-between items-end ">
-        <div className="uppercase"></div>
+    <div className="pt-56 pb-26 bg-[#0b0b0d] text-white px-4">
+      <div className="justify-between items-end">
+        <div className="uppercase">My Skills</div>
         <div className="h-fit flex items-center justify-center">
-          <MovingCardComponent items={tools} direction="right" speed="speed" />
+          <MovingCardComponent items={tools} direction="right" speed="slow" />
         </div>
       </div>
     </div>

@@ -48,18 +48,21 @@ const MovingCardComponent = ({
   return (
     <div
       ref={containerRef}
-      className={`scroller relative z-20 max-w-[110rem] overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] ${className}`}>
+      className={`scroller relative z-20 max-w-[110rem] overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] ${className}`}
+    >
       <ul
         ref={scrollerRef}
-        className={`flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4 ${
+        className={`flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-7 ${
           start ? "animate-scroll" : ""
-        } ${pauseOnHover ? "hover:[animation-play-state:paused]" : ""}`}>
+        } ${pauseOnHover ? "hover:[animation-play-state:paused]" : ""}`}
+      >
         {items.map((item, idx) => (
           <li
             key={idx}
-            className="relative max-w-full gap-5 rounded-full bg-[#191920] px-5 py-2 flex items-center justify-center hover:shadow-white shadow-lg">
-            <blockquote className="poppins flex items-center justify-center gap-x-2 ">
-              <img src={item.img} alt="" className="w-4"/>
+            className={`relative max-w-full gap-5 rounded-full bg-[#191920] px-5 py-2 flex items-center justify-center transition-shadow duration-300 shadow-xl shadow-white shadow-[0px_2px_100px_-2px_${item.hoverColor || "#ffffff"}]`}
+          >
+            <blockquote className="poppins flex items-center justify-center gap-x-2">
+              <img src={item.img} alt={item.quote} className="w-4" />
               <span className="relative z-20 text-md leading-loose font-light text-neutral-800 dark:text-gray-100">
                 {item.quote}
               </span>
