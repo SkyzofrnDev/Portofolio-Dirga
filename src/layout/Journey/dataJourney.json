@@ -1,14 +1,10 @@
 [
-    {
-      "image": "/path/to/image1.svg",
-      "desc": "Description for the first journey entry."
-    },
-    {
-      "image": "/path/to/image2.svg",
-      "desc": "Description for the second journey entry."
-    },
-    {
-      "image": "/path/to/image3.svg",
-      "desc": "Description for the third journey entry."
-    }
-  ]
+  {
+    "image": "/path/to/image1.svg",
+    "desc": "One of the fun and meaningful experiences I had was joining the Clevio “National Game Creation Competition 2025 – Powered by AI”, which ran from January 26th to February 16th. I learned a lot—not just about game development and AI integration, but also teamwork, time management, and staying focused under pressure."
+  },
+  {
+    "image": "/path/to/image3.svg",
+    "desc": "Ga ada lagi hwhwh"
+  }
+]
