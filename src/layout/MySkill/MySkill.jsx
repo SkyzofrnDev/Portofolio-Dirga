@@ -45,9 +45,9 @@ const MySkill = () => {
   return (
     <div className="pt-56 pb-26 bg-[#0b0b0d] text-white px-4">
       <div className="justify-between items-end">
-        <div className="uppercase">My Skills</div>
-        <div className="h-fit flex items-center justify-center">
-          <MovingCardComponent items={tools} direction="right" speed="slow" />
+        <div className="h-fit flex items-center justify-center flex-col">
+        <MovingCardComponent items={tools} direction="right" speed="slow" />
+        <MovingCardComponent items={tools} direction="left" speed="slow" />
         </div>
       </div>
     </div>

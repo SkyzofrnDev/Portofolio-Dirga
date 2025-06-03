@@ -41,12 +41,12 @@ const Portfolio = () => {
       <div className="bg-[url('/Background.png')] bg-cover">
         <Navbar />
         <Herosection />
-        <About />
+        {/* <About /> */}
         <JobTitle />
-        <Certificate />
-        <MySkill />
+        {/* <Certificate /> */}
         {/* <MyProject /> */}
         <MyProject2/>
+        <MySkill /> 
         <Journey />
         <ProjectDesign />
         <Qoute>
