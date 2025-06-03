@@ -41,7 +41,7 @@ const Portfolio = () => {
       <div className="bg-[url('/Background.png')] bg-cover">
         <Navbar />
         <Herosection />
-        {/* <About /> */}
+        <About />
         <JobTitle />
         {/* <Certificate /> */}
         {/* <MyProject /> */}
