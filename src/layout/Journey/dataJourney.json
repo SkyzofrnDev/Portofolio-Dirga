@@ -1,10 +1,18 @@
 [
   {
-    "image": "/path/to/image1.svg",
+    "image": "/Experience/Nevtik.png",
+    "desc": "One of my first and most rewarding experiences was joining Nevtik Academy in the Web Dev division, where I both learned and taught, connected students with each other and with alumni, and focused on preparing for competitions. I picked up skills in mentorship, collaboration, networking, and honed my ability to guide others while still learning myself."
+  },
+  {
+    "image": "/Experience/Digiup.png",
+    "desc": "Another fun and meaningful experience was joining Telkom’s DigiUp 2024 bootcamp, where I focused on backend development with Go and even took the BNSP certification test. I learned a lot—not just about Golang and building scalable APIs, but also teamwork, time management, and staying confident under pressure to meet certification standards."
+  },
+  {
+    "image": "/Experience/Nevtik.png",
     "desc": "One of the fun and meaningful experiences I had was joining the Clevio “National Game Creation Competition 2025 – Powered by AI”, which ran from January 26th to February 16th. I learned a lot—not just about game development and AI integration, but also teamwork, time management, and staying focused under pressure."
   },
   {
-    "image": "/path/to/image3.svg",
-    "desc": "Ga ada lagi hwhwh"
+    "image": "/Experience/Dbs.png",
+    "desc": "Another fun and meaningful experience was joining the Coding Camp 2025 powered by DBS Foundation and Dicoding earlier this year. I learned a lot—not just about web development and machine learning, but also teamwork, time management, and tackling challenges under tight deadlines."
   }
 ]

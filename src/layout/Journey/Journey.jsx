@@ -16,11 +16,11 @@ const Journey = () => {
         </p>
         <p className="mt-5 text-xl">A Journey Through My Experiences</p>
       </div>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[90rem] mx-auto">
         {journeyData.map((entry, index) => (
           <div
             key={index}
-            className={`flex mt-10 items-stretch justify-between ${
+            className={`flex mt-48 items-stretch justify-between ${
               index % 2 === 0 ? "flex-row" : "flex-row-reverse"
             }`}
           >
