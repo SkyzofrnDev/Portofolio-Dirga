@@ -4,7 +4,7 @@
 @tailwind utilities;
 @font-face {
     font-family: 'TwCent';
-    src:  url('./Font/TwCent.ttf') format('woff');
+    src:  url('/Font/TwCent.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
   }
