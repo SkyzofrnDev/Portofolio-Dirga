@@ -42,11 +42,30 @@ const Navbar = ({ onScrollTo }) => {
 
   const navLinks = (
     <>
-      <li className="cursor-pointer" onClick={() => handleLinkClick("#ABOUT")}>ABOUT</li>
-      <li className="cursor-pointer" onClick={() => handleLinkClick("#PROJECT")}>PROJECT</li>
-      <li className="cursor-pointer" onClick={() => handleLinkClick("#SKILL")}>SKILL</li>
-      <li className="cursor-pointer" onClick={() => handleLinkClick("#EXPERIENCE")}>EXPERIENCE</li>
-      <li className="cursor-pointer" onClick={() => handleLinkClick("#CONTACT")}>CONTACT</li>
+      <li className="cursor-pointer" onClick={() => handleLinkClick("#ABOUT")}>
+        ABOUT
+      </li>
+      <li
+        className="cursor-pointer"
+        onClick={() => handleLinkClick("#PROJECT")}
+      >
+        PROJECT
+      </li>
+      <li className="cursor-pointer" onClick={() => handleLinkClick("#SKILL")}>
+        SKILL
+      </li>
+      <li
+        className="cursor-pointer"
+        onClick={() => handleLinkClick("#EXPERIENCE")}
+      >
+        EXPERIENCE
+      </li>
+      <li
+        className="cursor-pointer"
+        onClick={() => handleLinkClick("#CONTACT")}
+      >
+        CONTACT
+      </li>
     </>
   );
 
@@ -59,29 +78,42 @@ const Navbar = ({ onScrollTo }) => {
 
         {/* Desktop Menu */}
         <div ref={desktopMenuRef} className="hidden">
-          <ul className="flex gap-16 text-[1.5rem]">
-            {navLinks}
-          </ul>
+          <ul className="flex gap-16 text-[1.5rem]">{navLinks}</ul>
         </div>
 
         {/* Mobile Hamburger */}
-        <div className="lg:hidden bg-[#1e1e1e] p-4 rounded-xl cursor-pointer flex items-center relative z-50" onClick={handleToggleMenu}>
-          <div className="w-8 h-6 flex flex-col justify-between cursor-pointer relative">
-            <span className={`absolute w-8 h-[2px] bg-white transition-all duration-300 ${isMenuOpen ? "rotate-45 top-3.5" : "top-0"}`} />
-            <span className={`absolute w-8 h-[2px] bg-white transition-all duration-300 ${isMenuOpen ? "opacity-0" : "top-3"}`} />
-            <span className={`absolute w-8 h-[2px] bg-white transition-all duration-300 ${isMenuOpen ? "-rotate-45 top-3.5" : "top-6"}`} />
+        <div
+          className="lg:hidden bg-[#1e1e1e] p-4 rounded-xl cursor-pointer flex items-center relative z-50"
+          onClick={handleToggleMenu}
+        >
+          <div className="w-8 h-7 flex flex-col justify-between cursor-pointer relative">
+            <span
+              className={`absolute w-8 h-[2px] bg-white transition-all duration-300 ${
+                isMenuOpen ? "rotate-45 top-3.5" : "top-0"
+              }`}
+            />
+            <span
+              className={`absolute w-8 h-[2px] bg-white transition-all duration-300 ${
+                isMenuOpen ? "opacity-0" : "top-3"
+              }`}
+            />
+            <span
+              className={`absolute w-8 h-[2px] bg-white transition-all duration-300 ${
+                isMenuOpen ? "-rotate-45 top-3.5" : "top-6"
+              }`}
+            />
           </div>
         </div>
 
-        {/* Mobile Fullscreen Menu */}
         <div
           id="mobileOverlay"
           onClick={handleOverlayClick}
-          className={`fixed top-0 left-0 w-full h-screen bg-black bg-opacity-90 z-40 transition-all duration-500 ease-in-out ${
+          className={`fixed top-0 left-0 w-full h-screen bg-black/80 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 z-40 transition-all duration-500 ease-in-out ${
             isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         >
-          <ul className="flex flex-col items-center justify-center h-full gap-8 text-2xl text-white transition-transform duration-500 ease-in-out">
+          <ul
+            className="flex flex-col items-center justify-center h-full gap-8 text-2xl text-white transition-transform duration-500 ease-in-out">
             {navLinks}
           </ul>
         </div>

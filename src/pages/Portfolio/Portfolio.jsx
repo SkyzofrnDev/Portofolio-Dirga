@@ -1,67 +1,86 @@
 import React, { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
-import { Copyright, FollowingCursor, Footer, Footer2, Navbar } from "../../components";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { Navbar, Footer2, Copyright, FollowingCursor } from "../../components";
 import {
   About,
-  Certificate,
   Herosection,
   JobTitle,
   Journey,
-  MyProject,
   MyProject2,
   MySkill,
   ProjectDesign,
   Qoute,
 } from "../../layout";
 
-const lenis = new Lenis({
-  duration: 1.8, 
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
-  smooth: true,
-  smoothTouch: true,
-});
+gsap.registerPlugin(ScrollTrigger);
+
 const Portfolio = () => {
   useEffect(() => {
-    function raf(time) {
+    const lenis = new Lenis({
+      duration: 1.6,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
+      smoothTouch: true,
+    });
+
+    const raf = (time) => {
       lenis.raf(time);
       requestAnimationFrame(raf);
-    }
+    };
     requestAnimationFrame(raf);
+
+    // Sink Lenis scroll into ScrollTrigger
+    ScrollTrigger.scrollerProxy(document.body, {
+      scrollTop(value) {
+        return arguments.length ? lenis.scrollTo(value) : window.scrollY;
+      },
+      getBoundingClientRect() {
+        return {
+          top: 0,
+          left: 0,
+          width: window.innerWidth,
+          height: window.innerHeight,
+        };
+      },
+      pinType: document.body.style.transform ? "transform" : "fixed",
+    });
+
+    // Update ScrollTrigger on scroll
+    lenis.on("scroll", ScrollTrigger.update);
+    ScrollTrigger.refresh();
+
     return () => {
       lenis.destroy();
     };
   }, []);
+
   const handleScroll = (target) => {
     const el = document.querySelector(target);
     if (el) {
-      lenis.scrollTo(el, {
-        offset: -100, 
-        duration: 2, 
-        easing: (t) => 1 - Math.pow(1 - t, 3), 
-      });
+      window.scrollTo({ top: el.offsetTop - 100, behavior: "smooth" });
     }
   };
-  
+
   return (
     <>
       <FollowingCursor />
       <div className="bg-[url('/Background.png')] bg-cover">
-      <Navbar onScrollTo={handleScroll} />
-      <Herosection/>
+        <Navbar onScrollTo={handleScroll} />
+        <Herosection />
         <div id="ABOUT" className="scroll-mt-36">
-        <About />
+          <About />
         </div>
         <JobTitle />
-        {/* <Certificate /> */}
-        {/* <MyProject /> */}
         <div id="PROJECT">
-        <MyProject2/>
+          <MyProject2 />
         </div>
         <div id="SKILL">
-        <MySkill /> 
+          <MySkill />
         </div>
         <div id="EXPERIENCE">
-        <Journey />
+          <Journey />
         </div>
         <ProjectDesign />
         <Qoute>
@@ -69,9 +88,9 @@ const Portfolio = () => {
           greatness, because you are unstoppable.
         </Qoute>
         <div id="CONTACT">
-        <Footer2/>
+          <Footer2 />
         </div>
-        <Copyright/>
+        <Copyright />
       </div>
     </>
   );
