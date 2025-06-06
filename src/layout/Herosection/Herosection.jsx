@@ -57,8 +57,8 @@ const Herosection = () => {
   }, []);
 
   return (
-    <div className="px-20  h-screen bg-center flex flex-col justify-center items-start text-9xl font-[750]">
-      <div className="text-[#0b0b0d] grid grid-cols-2 gap-80 mt-16 ">
+    <div className="my-52 px-20 h-screen bg-center flex flex-col justify-center items-start text-9xl font-[750]">
+      <div className="text-[#0b0b0d] xl:grid grid-cols-2 gap-80 mt-16 ">
         <div className="tracking-tight">
           <p>INNOVATION</p>
           <div className="flex mt-10">
@@ -72,27 +72,32 @@ const Herosection = () => {
           </div>
 
           <div className="grid grid-cols-2 items-center mt-5 ">
-            <div className="w-0">
-              <svg
-                className="mt-5"
-                xmlns="http://www.w3.org/2000/svg"
-                width="96"
-                height="auto"
-                viewBox="0 0 96 96"
-                fill="none"
-              >
-                <circle cx="47.6133" cy="47.6134" r="47.6133" fill="#0b0b0d" />
-                <path
-                  d="M48.2237 19.5338L39.7332 39.9553L17.0919 47.6134L39.7332 55.2715L48.2237 75.693L56.7142 55.2715L79.3554 47.6134L56.7142 39.9553L48.2237 19.5338Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-            <div className="-ml-40">
+            <div className="flex gap-36">
+              <div className="w-0">
+                <svg
+                  className="mt-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="96"
+                  height="auto"
+                  viewBox="0 0 96 96"
+                  fill="none"
+                >
+                  <circle
+                    cx="47.6133"
+                    cy="47.6134"
+                    r="47.6133"
+                    fill="#0b0b0d"
+                  />
+                  <path
+                    d="M48.2237 19.5338L39.7332 39.9553L17.0919 47.6134L39.7332 55.2715L48.2237 75.693L56.7142 55.2715L79.3554 47.6134L56.7142 39.9553L48.2237 19.5338Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
               <p className="">PIXEL.</p>
             </div>
           </div>
-          <div className="font-normal text-4xl flex gap-2 text-nowrap mt-5 relative w-full">
+          <div className="font-normal flex-wrap gap-y-10 px-5 text-4xl flex gap-2 text-nowrap mt-5 relative w-full">
             <TransButton name={"UI & UX"} />
             <TransButton name={"FRONT END"} />
             <div className="relative flex-grow">
@@ -110,7 +115,7 @@ const Herosection = () => {
           </div>
         </div>
 
-        <div className="twcen text-[35px] leading-1 tracking-normal font-normal uppercase text-justify mt-5">
+        <div className="twcen text-[35px] leading-1 tracking-normal font-normal uppercase text-justify mt-5 p-5">
           Hello,You can call me Dirga. A designer and developer exploring
           creative ideas to bring concepts to life
           <div className="flex gap-28 mt-10">
