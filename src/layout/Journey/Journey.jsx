@@ -20,11 +20,11 @@ const Journey = () => {
         {journeyData.map((entry, index) => (
           <div
             key={index}
-            className={`flex mt-48 items-stretch justify-between ${
+            className={`lg:flex mt-48 items-stretch justify-between ${
               index % 2 === 0 ? "flex-row" : "flex-row-reverse"
             }`}
           >
-            <div className="w-1/3 flex items-center justify-center px-4">
+            <div className="lg:w-1/3 flex items-center justify-center px-4">
               <img
                 className="w-full h-44 lg:h-[280px] object-cover rounded-lg"
                 src={entry.image}
@@ -33,13 +33,13 @@ const Journey = () => {
                 data-aos-duration="5000"
               />
             </div>
-            <div className="w-1/3 flex flex-col items-center  px-4">
+            <div className="lg:w-1/3 flex flex-col items-center  px-4">
               <div className="p-3 rounded-full bg-white"  data-aos="fade-up" data-aos-duration="1000"></div>
               {index !== journeyData.length - 1 && (
                 <div className="w-0.5 h-44 lg:h-[280px] bg-white"  data-aos="fade-up" data-aos-duration="3000"></div>
               )}
             </div>
-            <div className="w-1/3 flex px-4 h-44 lg:h-[280px]">
+            <div className="lg:w-1/3 flex px-4 h-44 lg:h-[280px]">
               <p className="radio text-xl max-w-md"  data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}   data-aos-duration="4000">
                 {entry.desc}
               </p>
