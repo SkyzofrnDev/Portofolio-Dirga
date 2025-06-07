@@ -57,7 +57,7 @@ const Herosection = () => {
   }, []);
 
   return (
-    <div className="my-52 px-20 h-screen bg-center flex flex-col justify-center items-start text-9xl font-[750]">
+    <div className="my-52 lg:my-36 xl:my-0 px-20 h-screen bg-center flex flex-col justify-center items-start text-9xl font-[750]">
       <div className="text-[#0b0b0d] xl:grid grid-cols-2 gap-80 mt-16 ">
         <div className="tracking-tight">
           <p>INNOVATION</p>
@@ -115,7 +115,7 @@ const Herosection = () => {
           </div>
         </div>
 
-        <div className="twcen text-[35px] leading-1 tracking-normal font-normal uppercase text-justify mt-5 p-5">
+        <div className="mt-24 twcen text-[35px] leading-1 tracking-normal font-normal uppercase text-justify xl:mt-5 p-5">
           Hello,You can call me Dirga. A designer and developer exploring
           creative ideas to bring concepts to life
           <div className="flex gap-28 mt-10">
