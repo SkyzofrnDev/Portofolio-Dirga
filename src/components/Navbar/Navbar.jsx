@@ -71,35 +71,31 @@ const Navbar = ({ onScrollTo }) => {
 
   return (
     <div className="flex justify-center mx-16">
-      <div className="fixed z-50 w-full lg:w-[92%] max-w-full twcen text-white px-7 pr-10 pt-7 py-5 bg-[#0b0b0d] lg:rounded-b-3xl text-3xl justify-between flex overflow-hidden">
+      <div className="fixed z-50 w-full lg:w-[92%] max-w-full twcen text-white px-5 pt-4 py-4 bg-[#0b0b0d] lg:rounded-b-3xl text-xl lg:text-3xl justify-between flex overflow-hidden">
         <div className="flex items-center">
           <p className="">AGUSDEV</p>
         </div>
-
-        {/* Desktop Menu */}
         <div ref={desktopMenuRef} className="hidden">
           <ul className="flex gap-16 text-[1.5rem]">{navLinks}</ul>
         </div>
-
-        {/* Mobile Hamburger */}
         <div
-          className="lg:hidden bg-[#1e1e1e] p-4 rounded-xl cursor-pointer flex items-center relative z-50"
+          className="lg:hidden justify-center rounded-sm cursor-pointer flex items-center relative z-50"
           onClick={handleToggleMenu}
         >
-          <div className="w-8 h-7 flex flex-col justify-between cursor-pointer relative">
+          <div className="w-10 h-10 flex bg-[#1e1e1e] justify-center rounded-sm cursor-pointer  items-center flex-col  relative">
             <span
-              className={`absolute w-8 h-[2px] bg-white transition-all duration-300 ${
-                isMenuOpen ? "rotate-45 top-3.5" : "top-0"
+              className={`absolute w-6 h-[2px] bg-white transition-all duration-300 ${
+                isMenuOpen ? "rotate-45 top-5.5" : "top-3"
               }`}
             />
             <span
-              className={`absolute w-8 h-[2px] bg-white transition-all duration-300 ${
-                isMenuOpen ? "opacity-0" : "top-3"
+              className={`absolute w-6 h-[2px] bg-white transition-all duration-300 ${
+                isMenuOpen ? "opacity-0" : "top-5"
               }`}
             />
             <span
-              className={`absolute w-8 h-[2px] bg-white transition-all duration-300 ${
-                isMenuOpen ? "-rotate-45 top-3.5" : "top-6"
+              className={`absolute w-6 h-[2px] bg-white transition-all duration-300 ${
+                isMenuOpen ? "-rotate-45 top-7.5" : "top-7"
               }`}
             />
           </div>
