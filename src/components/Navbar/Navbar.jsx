@@ -71,11 +71,11 @@ const Navbar = ({ onScrollTo }) => {
 
   return (
     <div className="flex justify-center mx-16">
-      <div className="fixed z-50 w-full lg:w-[92%] max-w-full twcen text-white px-5 pt-4 py-4 bg-[#0b0b0d] lg:rounded-b-3xl text-xl lg:text-3xl justify-between flex overflow-hidden">
+      <div className="fixed z-50 w-full lg:w-[92%] max-w-full twcen text-white px-5 pt-4 lg:pt-5 py-4 bg-[#0b0b0d] lg:rounded-b-3xl text-xl lg:text-3xl justify-between flex overflow-hidden">
         <div className="flex items-center">
           <p className="">AGUSDEV</p>
         </div>
-        <div ref={desktopMenuRef} className="hidden">
+        <div ref={desktopMenuRef} className="hidden ">
           <ul className="flex gap-16 text-[1.5rem]">{navLinks}</ul>
         </div>
         <div

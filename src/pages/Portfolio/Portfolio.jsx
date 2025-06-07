@@ -72,6 +72,8 @@ const Portfolio = () => {
         <div id="ABOUT" className="scroll-mt-36">
           <About />
         </div>
+        <div className="bg-[#0b0b0d]">
+          
         <JobTitle />
         <div id="PROJECT">
           <MyProject2 />
@@ -91,6 +93,7 @@ const Portfolio = () => {
           <Footer2 />
         </div>
         <Copyright />
+        </div>
       </div>
     </>
   );
