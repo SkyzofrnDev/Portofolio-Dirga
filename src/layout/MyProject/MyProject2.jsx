@@ -29,12 +29,12 @@ const demoItems = [
 
 const MyProject2 = () => {
   return (
-    <div className="px-5 lg:px-20 bg-[#0b0b0d] pt-44 text-white">
+    <div className="px-7 lg:px-20 bg-[#0b0b0d] pt-44 text-white">
       <div className="xl:flex justify-between mb-20">
-        <p className="font-bold text-5xl text-white/70">
+        <p className="font-bold text-4xl md:text-5xl text-white/70">
           <ShinyTextComponent text="MY PROJECT" disabled={false} speed={3}/>
         </p>
-        <p className="w-2/3 lg:text-xl xl:text-2xl mt-10 xl:mt-0">
+        <p className="w-2/3 text-sm lg:text-xl xl:text-2xl mt-5 xl:mt-0">
           This Is My Complete Project ( gatau sotau jir )
         </p>
       </div>
