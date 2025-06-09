@@ -13,7 +13,6 @@ const About = () => {
   const content = `I am a motivated and eager student currently studying at SMKN 1 CIBINONG. With a keen interest in Website Programing, I have developed strong skills in Website Developer. I am actively involved in Nevtik Academy and enjoy taking on challenges that help me grow both academically and personally. My goal is to continue learning and applying my skills to make a positive impact in my school and community, while preparing for future opportunities in Software Engineering.`;
 
   useEffect(() => {
-    // Simulasi loading teks (bisa disesuaikan)
     const timeout = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
@@ -51,7 +50,6 @@ const About = () => {
     <div className="rounded-t-[4rem] overflow-x-hidden justify-center mt-10">
       <div className="rounded bg-[#0b0b0d] text-white px-6 md:px-10 lg:px-20 py-10">
         <div className="flex flex-col xl:flex-row w-full gap-10 items-center justify-center mt-10">
-          {/* Foto */}
           <div className="bg-white p-5 w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
             <img
               src="/Profile/Profile2.jpg"
@@ -63,7 +61,6 @@ const About = () => {
             </p>
           </div>
 
-          {/* Text / Skeleton */}
           <div className="w-full text-xl sm:text-3xl lg:2xl/normal 2xl:text-3xl/normal mb-20 leading-relaxed">
             {isLoading ? (
               <div className="space-y-4 animate-pulse">
