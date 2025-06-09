@@ -20,7 +20,7 @@ const Journey = () => {
         {journeyData.map((entry, index) => (
           <div
             key={index}
-            className={`lg:flex mt-48 items-stretch justify-between ${
+            className={`px-10 sm:px-5 md:px-24 lg:px-0 lg:flex mt-48 items-stretch justify-between ${
               index % 2 === 0 ? "flex-row" : "flex-row-reverse"
             }`}
           >
@@ -33,14 +33,14 @@ const Journey = () => {
                 data-aos-duration="5000"
               />
             </div>
-            <div className="lg:w-1/3 flex flex-col items-center  px-4">
-              <div className="p-3 rounded-full bg-white"  data-aos="fade-up" data-aos-duration="1000"></div>
+            <div className="w-full lg:w-1/3 flex flex-col items-center  px-4">
+              <div className="hidden lg:flex p-3 rounded-full bg-white"  data-aos="fade-up" data-aos-duration="1000"></div>
               {index !== journeyData.length - 1 && (
-                <div className="w-0.5 h-44 lg:h-[280px] bg-white"  data-aos="fade-up" data-aos-duration="3000"></div>
+                <div className=" hidden lg:flex w-0.5 h-44 lg:h-[280px] bg-white"  data-aos="fade-up" data-aos-duration="3000"></div>
               )}
             </div>
-            <div className="lg:w-1/3 flex px-4 h-44 lg:h-[280px]">
-              <p className="radio text-xl max-w-md"  data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}   data-aos-duration="4000">
+            <div className="mt-10 lg:mt-0 w-full lg:w-1/3 flex px-4 h-44 lg:h-[280px]">
+              <p className="text-center lg:text-left radio sm:text-base md:text-lg lg:text-xl lg:max-w-md"  data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}   data-aos-duration="4000">
                 {entry.desc}
               </p>
             </div>
