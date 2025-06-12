@@ -9,7 +9,7 @@ const Journey = () => {
   }, []);
 
   return (
-    <div className="xl:px-20 bg-[#0b0b0d] md:pt-44 text-white pb-52">
+    <div className="xl:px-20 bg-[#0b0b0d] md:pt-44 text-white pb-28 md:pb-52">
       <div className="flex flex-col text-center md:mb-28">
         <p className="text-4xl uppercase font-bold radio text-center">
           Exploring My Professional Adventures
