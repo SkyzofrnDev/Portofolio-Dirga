@@ -65,7 +65,7 @@ const Portfolio = () => {
   };
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       <FollowingCursor />
       <div className="bg-[url('/Background.png')] bg-cover">
         <Navbar onScrollTo={handleScroll} />
@@ -97,7 +97,7 @@ const Portfolio = () => {
         <Copyright />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
