@@ -5,6 +5,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { Navbar, Footer2, Copyright, FollowingCursor } from "../../components";
 import {
   About,
+  HeroResponsive,
   Herosection,
   JobTitle,
   Journey,
@@ -68,7 +69,8 @@ const Portfolio = () => {
       <FollowingCursor />
       <div className="bg-[url('/Background.png')] bg-cover">
         <Navbar onScrollTo={handleScroll} />
-        <Herosection />
+        {/* <Herosection /> */}
+        <HeroResponsive/>
         <div id="ABOUT" className="scroll-mt-36">
           <About />
         </div>

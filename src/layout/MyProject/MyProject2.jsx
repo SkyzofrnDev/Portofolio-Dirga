@@ -29,7 +29,7 @@ const demoItems = [
 
 const MyProject2 = () => {
   return (
-    <div className="px-7 lg:px-20 bg-[#0b0b0d] pt-44 text-white">
+    <div className="px-7 lg:px-20 bg-[#0b0b0d] pt-14 md:pt-44 text-white">
       <div className="xl:flex justify-between mb-20">
         <p className="font-bold text-4xl md:text-5xl text-white/70">
           <ShinyTextComponent text="MY PROJECT" disabled={false} speed={3}/>
