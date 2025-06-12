@@ -43,7 +43,7 @@ const ShinyText = ({ disabled, className, animationDuration, text }) => {
 
 const MySkill = () => {
   return (
-    <div className="pt-56 pb-26 bg-[#0b0b0d] text-white px-4">
+    <div className="py-20 md:pt-56 md:pb-26 bg-[#0b0b0d] text-white px-4">
       <div className="justify-between items-end">
         <div className="h-fit flex items-center justify-center flex-col overflow-hidden">
         <MovingCardComponent items={tools} direction="right" speed="normal" />

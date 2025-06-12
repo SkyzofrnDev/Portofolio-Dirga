@@ -9,8 +9,8 @@ const Journey = () => {
   }, []);
 
   return (
-    <div className="xl:px-20 bg-[#0b0b0d] pt-44 text-white pb-52">
-      <div className="flex flex-col text-center mb-28">
+    <div className="xl:px-20 bg-[#0b0b0d] md:pt-44 text-white pb-52">
+      <div className="flex flex-col text-center md:mb-28">
         <p className="text-4xl uppercase font-bold radio text-center">
           Exploring My Professional Adventures
         </p>
@@ -20,7 +20,7 @@ const Journey = () => {
         {journeyData.map((entry, index) => (
           <div
             key={index}
-            className={`px-10 sm:px-5 md:px-24 lg:px-0 lg:flex mt-48 items-stretch justify-between ${
+            className={`px-10 sm:px-5 md:px-24 lg:px-0 lg:flex mt-36 items-stretch justify-between ${
               index % 2 === 0 ? "flex-row" : "flex-row-reverse"
             }`}
           >
