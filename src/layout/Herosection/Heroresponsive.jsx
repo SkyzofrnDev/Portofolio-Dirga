@@ -6,7 +6,8 @@ const Heroresponsive = () => {
   return (
     <div className="mt-28 mx-5">
       <div className="text-5xl font-bold mb-8 ">
-        <p>INNOVATION IN EVERY</p>
+        <p>INNOVATION </p>
+        <p>IN EVERY</p>
         <div className="flex items-center gap-2 ">
           <img
             src="./bintang.svg"
@@ -32,6 +33,8 @@ const Heroresponsive = () => {
         <a
           href="https://www.linkedin.com/in/dirga-hardeka-agustiantara-7421832b8/"
           className="flex"
+          target="_blank"
+          
         >
           <div className="w-fit flex items-center justify-center rounded-full px-6 py-2 bg-[#0b0b0d]">
             <p className="poppins text-white font-bold">MY RESUME</p>

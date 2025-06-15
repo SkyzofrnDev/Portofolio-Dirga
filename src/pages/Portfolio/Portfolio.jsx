@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -18,6 +18,19 @@ import {
 gsap.registerPlugin(ScrollTrigger);
 
 const Portfolio = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    // Check screen size
+    const checkScreenSize = () => {
+      setIsDesktop(window.innerWidth >= 900); // Tailwind 'md' = 768px
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.6,
@@ -32,7 +45,6 @@ const Portfolio = () => {
     };
     requestAnimationFrame(raf);
 
-    // Sink Lenis scroll into ScrollTrigger
     ScrollTrigger.scrollerProxy(document.body, {
       scrollTop(value) {
         return arguments.length ? lenis.scrollTo(value) : window.scrollY;
@@ -48,7 +60,6 @@ const Portfolio = () => {
       pinType: document.body.style.transform ? "transform" : "fixed",
     });
 
-    // Update ScrollTrigger on scroll
     lenis.on("scroll", ScrollTrigger.update);
     ScrollTrigger.refresh();
 
@@ -69,32 +80,30 @@ const Portfolio = () => {
       <FollowingCursor />
       <div className="bg-[url('/Background.png')] bg-cover">
         <Navbar onScrollTo={handleScroll} />
-        {/* <Herosection /> */}
-        <HeroResponsive/>
+        {isDesktop ? <Herosection /> : <HeroResponsive />}
         <div id="ABOUT" className="scroll-mt-36">
           <About />
         </div>
         <div className="bg-[#0b0b0d]">
-          
-        <JobTitle />
-        <div id="PROJECT">
-          <MyProject2 />
-        </div>
-        <div id="SKILL">
-          <MySkill />
-        </div>
-        <div id="EXPERIENCE">
-          <Journey />
-        </div>
-        <ProjectDesign />
-        <Qoute>
-          Unlock your true potential. Believe, take action, and achieve
-          greatness, because you are unstoppable.
-        </Qoute>
-        <div id="CONTACT">
-          <Footer2 />
-        </div>
-        <Copyright />
+          <JobTitle />
+          <div id="PROJECT">
+            <MyProject2 />
+          </div>
+          <div id="SKILL">
+            <MySkill />
+          </div>
+          <div id="EXPERIENCE">
+            <Journey />
+          </div>
+          <ProjectDesign />
+          <Qoute>
+            Unlock your true potential. Believe, take action, and achieve
+            greatness, because you are unstoppable.
+          </Qoute>
+          <div id="CONTACT">
+            <Footer2 />
+          </div>
+          <Copyright />
         </div>
       </div>
     </div>
