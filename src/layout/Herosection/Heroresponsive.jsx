@@ -47,7 +47,7 @@ const Heroresponsive = () => {
             <p className="poppins text-white font-bold">MY RESUME</p>
           </div>
           <div className="p-4 rounded-full bg-[#0b0b0d]">
-            <img className="w-4" src="/Arrow.svg" alt="" />
+            <img className="w-4" src="/Arrow.svg" alt=""  loading="lazy"/>
           </div>
         </a>
       </div>

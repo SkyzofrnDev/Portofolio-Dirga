@@ -31,6 +31,7 @@ const Journey = () => {
                 alt={`Journey ${index + 1}`}
                 data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
                 data-aos-duration="5000"
+                 loading="lazy"
               />
             </div>
             <div className="w-full lg:w-1/3 flex flex-col items-center  px-4">

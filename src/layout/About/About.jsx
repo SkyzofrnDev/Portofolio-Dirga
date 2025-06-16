@@ -55,6 +55,7 @@ const About = () => {
               src="/Profile/Profile2.jpg"
               className="w-full object-cover aspect-square"
               alt="Profile"
+               loading="lazy"
             />
             <p className="text-black font-semibold poppins uppercase text-lg md:text-xl mt-2">
               Dirga Hardeka Agustiantara

@@ -31,7 +31,7 @@ const ButtonCategory = () => {
           <span
             className={`ripple ${clickedButton === button.id ? "animate" : ""}`}
           />
-          <img src={button.icon} alt={button.title} />
+          <img src={button.icon} alt={button.title}  loading="lazy" />
           <span className="text-lg">{button.title}</span>
         </button>
       ))}

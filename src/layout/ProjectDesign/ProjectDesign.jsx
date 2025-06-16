@@ -19,7 +19,7 @@ const ProjectDesign = () => {
           </p>
           <div className="flex mt-5">
             <p className="font-semibold mr-5 text-xl">DISCOVER ME</p>
-            <img src="/Arrow.svg" alt="" />
+            <img src="/Arrow.svg" alt=""  loading="lazy" />
           </div>
         </div>
       </div>

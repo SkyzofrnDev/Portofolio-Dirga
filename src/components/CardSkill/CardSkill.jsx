@@ -20,6 +20,7 @@ const CardSkill = () => {
               className="w-[150px] h-[200px] md:w-[230px] md:h-[290px] xl:w-[350px] xl:h-[430px] rounded-3xl bg-gray-500 block"
               style={{ outline: 'none', border: 'none' }}
               alt=""
+               loading="lazy"
             />
             <div className="absolute top-0 left-0 ml-3 mt-3 bg-[#0b0b0d] rounded-full px-1.5 xl:px-9 xl:py-2 md:px-5 py-1">
               <p className="twcen md:text-xl xl:text-3xl tracking-wide">{skill.category}</p>
@@ -37,7 +38,7 @@ const CardSkill = () => {
                   className="icon-svg w-5 ml-3  md:ml-0 md:w-10" 
                   src={skill.icon} 
                   alt="" 
- 
+  loading="lazy"
                 />
                 <p className="twcen md:text-3xl xl:text-5xl tracking-wider">{skill.skill}</p>
               </div>

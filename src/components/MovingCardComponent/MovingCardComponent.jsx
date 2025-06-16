@@ -62,7 +62,7 @@ const MovingCardComponent = ({
             className={`relative max-w-full gap-5 rounded-full bg-[#191920] px-5 py-2 flex items-center justify-center`}
           >
             <blockquote className="poppins flex items-center justify-center gap-x-2">
-              <img src={item.img} alt={item.quote} className="w-5" />
+              <img  loading="lazy" src={item.img} alt={item.quote} className="w-5" />
               <span className="relative z-20 text-lg  leading-loose font-light text-neutral-800 dark:text-gray-100">
                 {item.quote}
               </span>

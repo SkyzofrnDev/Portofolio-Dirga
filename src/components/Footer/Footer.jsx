@@ -124,6 +124,7 @@ const Footer = () => {
               showArrowEmail ? "opacity-100" : "opacity-0"
             }`}
             alt=""
+             loading="lazy"
           />
         </div>
         <div className="flex gap-5 items-center">
@@ -141,6 +142,7 @@ const Footer = () => {
               showArrowWhatsapp ? "opacity-100" : "opacity-0"
             }`}
             alt=""
+             loading="lazy"
           />
         </div>
       </div>
@@ -155,7 +157,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="p-4 bg-[#282828] rounded-full w-fit"
             >
-              <img src={media.icon} alt={media.alt} />
+              <img src={media.icon} alt={media.alt}  loading="lazy"/>
             </a>
           ))}
         </div>

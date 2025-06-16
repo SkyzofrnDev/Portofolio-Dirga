@@ -121,7 +121,7 @@ const Herosection = () => {
           <div className="flex gap-28 mt-10">
             {bintang.map((item, index) => (
               <div className="w-" key={index}>
-                <img className="w-16" src={item.gambar} alt="" />
+                <img className="w-16" src={item.gambar} alt=""  loading="lazy" />
               </div>
             ))}
           </div>

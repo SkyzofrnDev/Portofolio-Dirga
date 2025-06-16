@@ -48,6 +48,7 @@ const Certificate = () => {
           className={`w-full h-full bg-black ${imageClass}`}
           src={cert.image}
           alt={`Certificate ${cert.id}`}
+           loading="lazy"
         />
       </a>
     );
@@ -89,6 +90,7 @@ const Certificate = () => {
                   : "rounded-[1rem]"
               } w-full h-44`}
               src={cert.image}
+               loading="lazy"
               alt={`Certificate ${cert.id}`}
             />
           </a>
@@ -121,6 +123,7 @@ const Certificate = () => {
               className="w-full h-56 rounded-2xl bg-gray-800"
               src={cert.image}
               alt={`Certificate ${cert.id}`}
+               loading="lazy"
             />
           </a>
         ))}
