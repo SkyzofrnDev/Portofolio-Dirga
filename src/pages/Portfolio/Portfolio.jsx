@@ -95,7 +95,7 @@ const Portfolio = () => {
           <div id="EXPERIENCE">
             <Journey />
           </div>
-          <ProjectDesign />
+          {/* <ProjectDesign /> */}
           <Qoute>
             Unlock your true potential. Believe, take action, and achieve
             greatness, because you are unstoppable.
