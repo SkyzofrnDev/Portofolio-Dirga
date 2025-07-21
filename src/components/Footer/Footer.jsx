@@ -145,7 +145,7 @@ const Footer = () => {
              loading="lazy"
           />
         </div>
-      </div>
+      </div>  
       <div>
         <p className="uppercase font-semibold text-2xl mb-5">FOLLOW ME ON</p>
         <div className="flex gap-4">
