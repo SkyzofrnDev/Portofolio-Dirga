@@ -91,6 +91,7 @@ function MenuItem({ link, text, image }) {
         href={link}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        target="blank"
       >
         {text}
       </a>
